@@ -17,7 +17,7 @@ export function Sidebar() {
       {/* Name & Title */}
       <div className="text-center md:text-left">
         <h1 className="text-2xl md:text-3xl font-bold text-[#1a1a2e]">Adeel Atta</h1>
-        <p className="text-sm text-[#c4a35a] font-medium mt-1">Software Engineer</p>
+        <p className="text-sm text-accent font-medium mt-1">Software Engineer</p>
       </div>
 
       {/* Contact */}
@@ -78,7 +78,7 @@ export function Sidebar() {
         <a
           href="/resume.pdf"
           target="_blank"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#c4a35a] border border-[#c4a35a] rounded-md px-4 py-2 hover:bg-[#c4a35a] hover:text-white transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-accent border border-accent rounded-md px-4 py-2 hover:bg-accent hover:text-white transition-colors"
         >
           Download CV (PDF)
         </a>

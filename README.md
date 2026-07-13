@@ -1,64 +1,94 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=3B82F6&center=true&vCenter=true&width=435&lines=Adeel+Atta;Gold+Medalist+%7C+Mentor" alt="Typing SVG" />
-</p>
+# Adeel Atta
 
-<p align="center">
-  B.S. Software Engineering — University of Sindh, Jamshoro
-  <br/>
-  <b>CGPA:</b> 3.71 / 4.00
-</p>
+**B.S. Software Engineering** — University of Sindh, Jamshoro  
+**CGPA:** 3.71 / 4.00 — Gold Medalist
 
-<p align="center">
-  <a href="mailto:adeelatta2000@gmail.com"><img src="https://img.shields.io/badge/Email-adeelatta2000%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://www.linkedin.com/in/adeel-atta/"><img src="https://img.shields.io/badge/LinkedIn-in%2Fadeel--atta-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-</p>
+- Email: [adeelatta2000@gmail.com](mailto:adeelatta2000@gmail.com)
+- Portfolio: [adeelatta.dev](https://adeelatta.dev)
+- LinkedIn: [linkedin.com/in/adeel-atta](https://linkedin.com/in/adeel-atta)
+- GitHub: [github.com/AdeelAtta](https://github.com/AdeelAtta)
 
 ---
 
-<h3>Hackathons & Competitions</h3>
+## About
 
-- 🏆 <b>1st Place</b> — Geekle AI Hackathon (Text-to-Diagram module with AI)
-- 🏆 <b>Visionary Award</b> — LLM Hackathon, Materials Science (RAG-powered system)
-- 🔶 Meta Hacker Cup 2024 — Ranked 6,752 / 30,000+
-- 🧩 Harvard CS50 Puzzle Day — Global puzzle-solving competition
-- 🤖 Llama 3 Hackathon — LLM-as-a-judge chat evaluation tool
-- 🌍 Pak-Angels Gen AI Hackathon — Environmental & Urban Metrics Tool
-- 🔌 WordPress Plugin Hackathon — Programmatic plugin development
-
-<h3 align="center">Teaching & Mentorship</h3>
-
-<p align="center">
-  <b>Section Leader</b> — <a href="https://digitalcredential.stanford.edu/check/DCEA26E01D4AEB0135625A3474AD6C39544208D663C16CCC87A5244F220D1757czIwWG1GVWV5WUVzbzVaNnBFTlBtOGhlS3I1cTV2dTg4bUVQZkJaWDV3cGZqM05V">Stanford: Code in Place</a>
-  <br/>
-  Led a section of students through Stanford's introductory programming course (CS106A), conducting sessions on core concepts, debugging, and computational problem-solving.
-  <br/><br/>
-  <b>Moderator & Trainer</b> — <a href="https://www.youtube.com/watch?v=5PkN02TBZ60&list=PLe-jr3hh4N_nxCFmnBil389tMXJ3K-dWz&index=1">iCodeGuru</a>
-  <br/>
-  Mentored less-privileged students in Data Structures & Algorithms. Conducted live online sessions building algorithmic thinking and structured problem-solving skills.
-</p>
-
-<h3 align="center">Education</h3>
-
-<p align="center">
-  <b>B.S. Software Engineering</b>
-  <br/>
-  University of Sindh, Jamshoro (Jan 2020 – May 2024)
-  <br/>
-  <b>CGPA:</b> 3.71 / 4.00
-</p>
-
-<p align="center">
-  <i>Data Science &bull; Networks &bull; AI/ML &bull; Operating Systems &bull; DSA</i>
-</p>
+A curious engineer who explores across domains — from blockchain and full-stack development to AI/ML and education. Continuously learning, adapting quickly, and working at the intersection of different fields.
 
 ---
 
-<p align="center">
-  <a href="https://adeelatta.dev"><b>adeelatta.dev</b></a> &bull;
-  <a href="https://github.com/AdeelAtta">GitHub</a> &bull;
-  <a href="https://www.linkedin.com/in/adeel-atta/">LinkedIn</a>
-</p>
+## Education
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AdeelAtta&color=3B82F6&style=flat-square&label=Visitors" alt="Visitors"/>
-</p>
+**B.S. Software Engineering**  
+University of Sindh, Jamshoro — Jan 2020 – May 2024
+
+- CGPA: 3.71 / 4.00
+- Gold Medal — Ranked 1st out of 1,500+ students in the Faculty of Engineering and Technology
+- Silver Medal — Ranked 1st in the Software Engineering Department
+
+*Relevant Coursework:* Data Science, Computer Communication & Networks, Pervasive Computing, Operating Systems, Microprocessor & Assembly Language, Digital Logic Design, Data Structures & Algorithms, Linear Algebra, Probability & Statistics, Calculus
+
+---
+
+## Awards & Honors
+
+- **Gold Medal** — Ranked 1st out of 1,500+ students in the Faculty of Engineering and Technology, University of Sindh
+- **Silver Medal** — Ranked 1st in the Software Engineering Department, University of Sindh
+- **Prime Minister Laptop Award** — Recipient during undergraduate studies
+
+---
+
+## International Competitions & Hackathons
+
+- **1st Place — Geekle AI Hackathon** — Developed a Text-to-Diagram module for generating structured architecture diagrams using AI. Team: FR1
+- **Visionary Award — LLM Hackathon (Materials Science)** — Built a RAG-powered system for extracting structured data from scientific papers. Team: Best Team
+- **Meta Hacker Cup 2024** — Ranked 6,752 out of 30,000+ global participants
+- **Harvard CS50 Puzzle Day** — Global puzzle-solving competition demonstrating problem-solving and logical reasoning skills. Team: CS50 Puzzle Squad
+- **Llama 3 Hackathon** — Built an LLM-as-a-judge chat evaluation tool using the Llama 3 model. Team: Fastian
+- **Pak-Angels Gen AI Hackathon** — Developed AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER data and GPT-4. Team: Smart Solution
+- **WordPress Plugin Hackathon** — Contributed to programmatic plugin feature development
+
+---
+
+## Teaching & Mentoring
+
+**Section Leader** — Stanford: Code in Place (Apr 2026 – present)  
+Led a section of students through Stanford's introductory programming course (CS106A), conducting sessions on core concepts, debugging, and computational problem-solving.
+
+**Moderator & Trainer** — ICodeGuru (Feb 2026 – present)  
+Mentored less-privileged students in Data Structures & Algorithms. Conducted live online sessions building algorithmic thinking and structured problem-solving skills.
+
+---
+
+## Professional Experience
+
+**Frontend Engineer (Software Engineer II)** — Mentalyc (Apr 2025 – Mar 2026)  
+Owned end-to-end frontend development for an AI mental health platform serving 30,000+ users. Built a modular design system, automated developer workflows, and wrote BDD test cases with Cucumber.
+
+**Frontend Developer (Software Engineer I)** — Analog Mutations (Feb 2023 – Mar 2025)  
+Developed user-centric interfaces for Web3 applications serving 600+ users. Integrated blockchain functionality using Cosmos SDK and Solana. Collaborated on Node.js and Express backend integrations.
+
+---
+
+## Technical Skills
+
+- **AI & Machine Learning:** Python (Pandas, NumPy), PyTorch, Scikit-learn, HuggingFace, RAG, LLM Engineering, ML Model Training, Deep Learning
+- **Software Engineering:** React, Next.js, TypeScript, Node.js, Express, MongoDB, PostgreSQL, Git, Docker, JEST, Playwright, BDD / Cucumber
+- **Blockchain & Web3:** Cosmos SDK, Solana, Web3.js, Ethers.js, WalletConnect, MetaMask, EVM, Staking Platforms
+
+---
+
+## Projects
+
+- **Mentalyc Web App** — Designed and implemented a modular design system, feature implementations, and bug fixes for an AI mental health platform serving 30,000+ active subscribers using TypeScript and ES6.
+- **Mentalyc Chrome Extension** — Developed frontend design system with API and web integrations to facilitate auto notes transfer from therapy sessions to different EHR systems.
+- **Personify Chat Assistant (Browser Extension)** — Chrome extension providing AI-powered real-time messaging suggestions across WhatsApp Web and LinkedIn.
+- **EthicalNode Platform** — Maintained computational execution for a distributed staking network serving 900+ edge nodes with $1M+ on-chain capital.
+- **Ethical Wallet** — Built a Chrome extension wallet enabling secure browser-based blockchain transactions.
+- **Decentr.ai: Multi-Model AI Aggregation Hub & API Gateway** — MERN-stack platform consolidating multi-vendor AI access (GPT-4, Llama, Claude, DALL-E) under a decentralized wallet subscription gateway with scalable backend REST APIs.
+- **Environmental & Urban Metrics Modeling Tool** — Engineered an analytical pipeline for structural parsing of multi-variable NASA POWER meteorological datasets. Integrated empirical parameters with LLM runtime contexts for climate-resiliency evaluation.
+- **Research Replication: Dataset Features & ML Performance Analysis** — Replicated a 2024 Nature Scientific Reports study — built a data pipeline across 45 Kaggle/UCI datasets using PCA-weighted aggregations, Spearman correlations, and SHAP under 5-fold cross-validation.
+- **Plant Disease Detection & Classification** — Implemented deep learning computer vision architectures using PyTorch to automate plant disease identification, optimizing classification accuracy for edge processing scenarios.
+
+---
+
+*Adeel Atta — 2025*

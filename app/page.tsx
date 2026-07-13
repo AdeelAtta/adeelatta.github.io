@@ -9,7 +9,7 @@ type TabId = "introduction" | "teaching" | "experience"
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <div className="mb-5">
-      <h2 className="text-sm font-bold text-[#c4a35a] uppercase tracking-[0.15em]">{children}</h2>
+      <h2 className="text-sm font-bold text-accent uppercase tracking-[0.15em]">{children}</h2>
       <div className="h-px bg-[#e5e7eb] mt-1.5" />
     </div>
   )
@@ -20,7 +20,7 @@ function IntroductionContent() {
     <>
       {/* Bio */}
       <section className="pt-4">
-        <p className="text-sm leading-relaxed text-[#4a4a6a]">
+        <p className="text-base leading-relaxed text-[#4a4a6a]">
           A curious engineer who enjoys exploring across domains — from blockchain and full-stack development
           to AI/ML and education. I learn continuously, adapt quickly, and believe that the best work
           happens at the intersection of different fields.
@@ -34,7 +34,7 @@ function IntroductionContent() {
           <div className="flex items-start justify-between gap-4">
             <div>
               <h3 className="text-sm font-bold text-[#1a1a2e]">B.S. Software Engineering</h3>
-              <p className="text-xs text-[#c4a35a] font-medium">University of Sindh, Jamshoro</p>
+              <p className="text-xs text-accent font-medium">University of Sindh, Jamshoro</p>
             </div>
             <span className="text-xs text-[#6b7280] shrink-0">Jan 2020 – May 2024</span>
           </div>
@@ -54,7 +54,7 @@ function IntroductionContent() {
             <p className="text-[11px] font-medium text-[#6b7280] uppercase tracking-wider mb-1.5">
               Relevant Coursework
             </p>
-            <p className="text-xs text-[#6b7280] leading-relaxed">
+            <p className="text-sm text-[#6b7280] leading-relaxed">
               Data Science, Computer Communication & Networks, Pervasive Computing, Operating Systems,
               Microprocessor & Assembly Language, Digital Logic Design, Data Structures & Algorithms,
               Linear Algebra, Probability & Statistics, Calculus
@@ -69,19 +69,19 @@ function IntroductionContent() {
         <div className="space-y-3">
           <div>
             <h3 className="text-sm font-bold text-[#1a1a2e]">Gold Medal</h3>
-            <p className="text-xs text-[#6b7280]">
+            <p className="text-sm text-[#6b7280]">
               Ranked 1st out of 1,500+ students in the Faculty of Engineering and Technology, University of Sindh.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-bold text-[#1a1a2e]">Silver Medal</h3>
-            <p className="text-xs text-[#6b7280]">
+            <p className="text-sm text-[#6b7280]">
               Ranked 1st in the Software Engineering Department, University of Sindh.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-bold text-[#1a1a2e]">Prime Minister Laptop Award</h3>
-            <p className="text-xs text-[#6b7280]">
+            <p className="text-sm text-[#6b7280]">
               Recipient of the Prime Minister Laptop Award during undergraduate studies.
             </p>
           </div>
@@ -187,17 +187,17 @@ function IntroductionContent() {
             },
           ].map((item, i) => (
             <div key={i} className="flex items-start gap-2">
-              <span className="text-[#c4a35a] text-xs mt-0.5 shrink-0">▸</span>
+              <span className="text-accent text-xs mt-0.5 shrink-0">▸</span>
               <div>
                 <a
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-semibold text-[#1a1a2e] hover:text-[#c4a35a] transition-colors"
+                  className="text-sm font-semibold text-[#1a1a2e] hover:text-accent transition-colors"
                 >
                   {item.title} <ExternalLink className="w-3 h-3 inline" aria-hidden="true" />
                 </a>
-                <p className="text-xs text-[#6b7280] mt-0.5">{item.desc}</p>
+                <p className="text-sm text-[#6b7280] mt-0.5">{item.desc}</p>
                 {"team" in item && item.team && (
                   <div className="mt-3 border border-[#e5e7eb] rounded-lg p-3 bg-[#fafafa]">
                     {"name" in item.team && item.team.name && (
@@ -212,10 +212,10 @@ function IntroductionContent() {
                           href={member.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 bg-white border border-[#e5e7eb] rounded-full px-2.5 py-1 hover:border-[#c4a35a] transition-colors"
+                          className="inline-flex items-center gap-1.5 bg-white border border-[#e5e7eb] rounded-full px-2.5 py-1 hover:border-accent transition-colors"
                           title={member.name}
                         >
-                          <div className="w-4 h-4 rounded-full bg-[#c4a35a] flex items-center justify-center text-[9px] text-white font-bold shrink-0">
+                          <div className="w-4 h-4 rounded-full bg-accent flex items-center justify-center text-[9px] text-white font-bold shrink-0">
                             {member.name.charAt(0)}
                           </div>
                           <span className="text-[10px] text-[#6b7280] hover:text-[#1a1a2e]">{member.name}</span>
@@ -262,14 +262,14 @@ function TeachingContent() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs text-[#c4a35a] font-medium hover:underline"
+                  className="text-xs text-accent font-medium hover:underline"
                 >
                   {item.org} <ExternalLink className="w-3 h-3 inline" aria-hidden="true" />
                 </a>
               </div>
               <span className="text-xs text-[#6b7280] shrink-0">{item.period}</span>
             </div>
-            <p className="text-xs text-[#6b7280] mt-1 leading-relaxed">{item.desc}</p>
+            <p className="text-sm text-[#6b7280] mt-1 leading-relaxed">{item.desc}</p>
           </div>
         ))}
       </div>
@@ -301,11 +301,11 @@ function ExperienceContent() {
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <h3 className="text-sm font-bold text-[#1a1a2e]">{job.title}</h3>
-                  <p className="text-xs text-[#c4a35a] font-medium">{job.org}</p>
+                  <p className="text-xs text-accent font-medium">{job.org}</p>
                 </div>
                 <span className="text-xs text-[#6b7280] shrink-0">{job.period}</span>
               </div>
-              <p className="text-xs text-[#6b7280] mt-1 leading-relaxed">{job.desc}</p>
+              <p className="text-sm text-[#6b7280] mt-1 leading-relaxed">{job.desc}</p>
             </div>
           ))}
         </div>
@@ -330,7 +330,7 @@ function ExperienceContent() {
           ].map((skill, i) => (
             <div key={i} className="grid grid-cols-[120px_1fr] gap-3">
               <span className="text-xs font-semibold text-[#1a1a2e]">{skill.category}</span>
-              <span className="text-xs text-[#6b7280] leading-relaxed">{skill.items}</span>
+              <span className="text-sm text-[#6b7280] leading-relaxed">{skill.items}</span>
             </div>
           ))}
         </div>
@@ -387,18 +387,18 @@ function ExperienceContent() {
           ].map((project, i) => (
             <div key={i}>
               <div className="flex items-start gap-2">
-                <span className="text-[#c4a35a] text-xs mt-0.5 shrink-0">▸</span>
+                <span className="text-accent text-xs mt-0.5 shrink-0">▸</span>
                 <div>
                   <h3 className="text-sm font-bold text-[#1a1a2e]">
                     {project.link ? (
-                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-[#c4a35a] transition-colors">
+                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                         {project.title} <ExternalLink className="w-3 h-3 inline" aria-hidden="true" />
                       </a>
                     ) : (
                       project.title
                     )}
                   </h3>
-                  <p className="text-xs text-[#6b7280] mt-0.5 leading-relaxed">{project.desc}</p>
+                  <p className="text-sm text-[#6b7280] mt-0.5 leading-relaxed">{project.desc}</p>
                 </div>
               </div>
             </div>
@@ -423,7 +423,7 @@ export default function Home() {
       {/* Top Navigation */}
       <nav className="flex items-center justify-between gap-4 mb-8 bg-[#fafafa] border border-[#e5e7eb] rounded-lg px-4 py-2 w-full">
         <div className="flex items-center gap-2 shrink-0">
-          <div className="w-7 h-7 bg-[#c4a35a] rounded-full flex items-center justify-center">
+          <div className="w-7 h-7 bg-accent rounded-full flex items-center justify-center">
             <span className="text-white font-bold text-xs">A</span>
           </div>
           <span className="text-sm font-semibold text-[#1a1a2e] hidden sm:inline">Adeel Atta</span>
