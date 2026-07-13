@@ -86,7 +86,6 @@ Developed user-centric interfaces for Web3 applications serving 600+ users. Inte
 - **Ethical Wallet** — Built a Chrome extension wallet enabling secure browser-based blockchain transactions.
 - **Decentr.ai: Multi-Model AI Aggregation Hub & API Gateway** — MERN-stack platform consolidating multi-vendor AI access (GPT-4, Llama, Claude, DALL-E) under a decentralized wallet subscription gateway with scalable backend REST APIs.
 - **Environmental & Urban Metrics Modeling Tool** — Engineered an analytical pipeline for structural parsing of multi-variable NASA POWER meteorological datasets. Integrated empirical parameters with LLM runtime contexts for climate-resiliency evaluation.
-- **Research Replication: Dataset Features & ML Performance Analysis** — Replicated a 2024 Nature Scientific Reports study — built a data pipeline across 45 Kaggle/UCI datasets using PCA-weighted aggregations, Spearman correlations, and SHAP under 5-fold cross-validation.
 - **Plant Disease Detection & Classification** — Implemented deep learning computer vision architectures using PyTorch to automate plant disease identification, optimizing classification accuracy for edge processing scenarios.
 
 ---

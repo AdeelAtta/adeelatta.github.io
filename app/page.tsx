@@ -351,20 +351,16 @@ function ExperienceContent() {
               link: "https://chromewebstore.google.com/detail/mentalyc/jhlkppjeaacmnbpdmlflkknfjfjkpfgj",
             },
             {
-              title: "Personify Chat Assistant (Browser Extension)",
-              desc: "Chrome extension providing AI-powered real-time messaging suggestions across WhatsApp Web and LinkedIn.",
-              link: "https://chromewebstore.google.com/detail/personify-ai-chat-assista/dfokiabcgalihnedbbjbkdfhjeokdpne",
-            },
-            {
-              title: "EthicalNode Platform",
-              desc: "Maintained computational execution for a distributed staking network serving 900+ edge nodes with $1M+ on-chain capital.",
-              link: "https://ethicalnode.com",
-            },
-            {
               title: "Ethical Wallet",
               desc: "Built a Chrome extension wallet enabling secure browser-based blockchain transactions.",
               link: "https://chromewebstore.google.com/detail/ethical-wallet/nfaepmamdapehcbedhejbjcpnlcldodi",
             },
+            {
+              title: "Personify Chat Assistant (Browser Extension)",
+              desc: "Chrome extension providing AI-powered real-time messaging suggestions across WhatsApp Web and LinkedIn.",
+              link: "https://github.com/SameerVers3/Chat-Evaluator-llama3-hackathon",
+            },
+
             {
               title: "Decentr.ai: Multi-Model AI Aggregation Hub & API Gateway",
               desc: "MERN-stack platform consolidating multi-vendor AI access (GPT-4, Llama, Claude, DALL-E) under a decentralized wallet subscription gateway with scalable backend REST APIs.",
@@ -373,11 +369,6 @@ function ExperienceContent() {
               title: "Environmental & Urban Metrics Modeling Tool",
               desc: "Engineered an analytical pipeline for structural parsing of multi-variable NASA POWER meteorological datasets. Integrated empirical parameters with LLM runtime contexts for climate-resiliency evaluation.",
               link: "https://urban-ai.streamlit.app/",
-            },
-            {
-              title: "Research Replication: Dataset Features & ML Performance Analysis",
-              desc: "Replicated a 2024 Nature Scientific Reports study — built a data pipeline across 45 Kaggle/UCI datasets using PCA-weighted aggregations, Spearman correlations, and SHAP under 5-fold cross-validation.",
-              link: "https://colab.research.google.com/drive/1T2OJ9f613JXnJaQeEGuanD1aDuLN_vQE?usp=sharing",
             },
             {
               title: "Plant Disease Detection & Classification",
