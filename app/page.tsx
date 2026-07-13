@@ -287,7 +287,7 @@ function ExperienceContent() {
             {
               title: "Frontend Engineer (Software Engineer II)",
               org: "Mentalyc",
-              period: "Apr 2025 – Feb 2026",
+              period: "Apr 2025 – Mar 2026",
               desc: "Owned end-to-end frontend development for an AI mental health platform serving 30,000+ users. Built a modular design system, automated developer workflows, and wrote BDD test cases with Cucumber.",
             },
             {
