@@ -242,15 +242,15 @@ function TeachingContent() {
           {
             title: "Section Leader",
             org: "Stanford: Code in Place",
-            period: "Apr 2026 – continue",
+            period: "Apr 2026 – Jun 2026",
             desc: "Led a section of students through Stanford's introductory programming course (CS106A), conducting sessions on core concepts, debugging, and computational problem-solving.",
             link: "https://digitalcredential.stanford.edu/check/DCEA26E01D4AEB0135625A3474AD6C39544208D663C16CCC87A5244F220D1757czIwWG1GVWV5WUVzbzVaNnBFTlBtOGhlS3I1cTV2dTg4bUVQZkJaWDV3cGZqM05V",
           },
           {
-            title: "Moderator & Trainer",
+            title: "Trainer",
             org: "ICodeGuru",
-            period: "Feb 2026 – Present",
-            desc: "Mentored less-privileged students in Data Structures & Algorithms. Conducted live online sessions building algorithmic thinking and structured problem-solving skills.",
+            period: "Feb 2026 – Mar 2026",
+            desc: "Mentored less-privileged students in Data Structures & Algorithms. Conducted live online sessions along with my team building algorithmic thinking and structured problem-solving skills.",
             link: "https://www.youtube.com/watch?v=5PkN02TBZ60&list=PLe-jr3hh4N_nxCFmnBil389tMXJ3K-dWz&index=1",
           },
         ].map((item, i) => (
