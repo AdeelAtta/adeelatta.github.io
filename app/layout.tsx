@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     siteName: "Adeel Atta",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://adeelatta.dev/images/design-mode/profile.webp", width: 400, height: 400, alt: "Adeel Atta profile photo" }],
   },
 }
 
