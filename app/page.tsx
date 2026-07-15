@@ -44,25 +44,21 @@ export default function Home() {
   })
   const [isEditing, setIsEditing] = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const [containerWidth, setContainerWidth] = useState(1200)
-  const [loaded, setLoaded] = useState(false)
+  const [containerWidth, setContainerWidth] = useState<number | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const saveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const enabledWidgetsRef = useRef(enabledWidgets)
 
   useEffect(() => { enabledWidgetsRef.current = enabledWidgets }, [enabledWidgets])
 
-  useEffect(() => { setLoaded(true) }, [])
-
   useEffect(() => {
-    function updateWidth() {
-      if (containerRef.current) {
-        setContainerWidth(containerRef.current.offsetWidth)
-      }
-    }
-    updateWidth()
-    window.addEventListener("resize", updateWidth)
-    return () => window.removeEventListener("resize", updateWidth)
+    if (!containerRef.current) return
+    const ro = new ResizeObserver(([entry]) => {
+      const w = entry.contentBoxSize?.[0]?.inlineSize ?? entry.contentRect.width
+      setContainerWidth(w)
+    })
+    ro.observe(containerRef.current)
+    return () => ro.disconnect()
   }, [])
 
   const scheduleSave = useCallback((l: unknown, w: unknown) => {
@@ -182,8 +178,8 @@ export default function Home() {
       </div>
 
       {/* Dashboard Grid */}
-      {loaded && (
-        <div ref={containerRef}>
+      <div ref={containerRef}>
+        {containerWidth !== null && (
           <GridLayout
             width={containerWidth}
             gridConfig={{ cols: 24, rowHeight: 80, margin: [12, 16] }}
@@ -219,8 +215,8 @@ export default function Home() {
               )
             })}
           </GridLayout>
-        </div>
-      )}
+        )}
+      </div>
 
       <WidgetDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} enabledWidgets={enabledWidgets} onToggleWidget={handleToggleWidget} />
 
