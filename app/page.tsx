@@ -458,6 +458,10 @@ export default function Home() {
         </main>
       </div>
       <footer className="border-t border-[#e5e7eb] mt-12 pt-6 text-center text-xs text-[#9ca3af]">
+        <div className="space-x-4 mb-2">
+          <a href="/privacy-policy" className="hover:text-[#6b7280] transition-colors">Privacy Policy</a>
+          <a href="/terms-of-service" className="hover:text-[#6b7280] transition-colors">Terms of Service</a>
+        </div>
         <p>&copy; {new Date().getFullYear()} Adeel Atta. All rights reserved.</p>
       </footer>
     </div>

@@ -7,7 +7,7 @@ export function Sidebar() {
       {/* Photo */}
       <div className="relative w-32 h-32 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-[#e5e7eb] mx-auto md:mx-0">
         <Image
-          src="/images/design-mode/Gemini_Generated_Image_wrhwklwrhwklwrhw.png"
+          src="/images/design-mode/profile.webp"
           alt="Adeel Atta"
           fill
           className="object-cover"
