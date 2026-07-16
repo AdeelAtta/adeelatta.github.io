@@ -1,6 +1,6 @@
 const jobs = [
   { title: "Frontend Engineer (Software Engineer II)", org: "Mentalyc", period: "Apr 2025 – Mar 2026",
-    desc: "Owned end-to-end frontend development for an AI mental health platform serving 30,000+ users. Built a modular design system, automated developer workflows, and wrote BDD test cases with Cucumber." },
+    desc: "Owned end-to-end frontend development for an AI mental health platform serving 30,000+ users. Built a modular design system, automated developer workflows, and wrote BDD test cases." },
   { title: "Frontend Developer (Software Engineer I)", org: "Analog Mutations", period: "Feb 2023 – Mar 2025",
     desc: "Developed user-centric interfaces for Web3 applications serving 600+ users. Integrated blockchain functionality using Cosmos SDK and Solana. Collaborated on Node.js and Express backend integrations." },
 ]

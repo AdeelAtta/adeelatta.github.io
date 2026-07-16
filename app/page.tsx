@@ -1,46 +1,33 @@
 "use client"
 
 import { useState, useEffect, useRef, useCallback } from "react"
-import GridLayout, { type LayoutItem } from "react-grid-layout"
+import { ResponsiveGridLayout, type Layout, type LayoutItem } from "react-grid-layout"
 import "react-grid-layout/css/styles.css"
 
 import { WidgetDrawer } from "@/components/widgets/WidgetDrawer"
-import { widgetMap, getDefaultLayout, allWidgetIds, type WidgetId } from "@/components/widgets/registry"
+import { widgetMap, getDefaultLayouts, breakpoints, cols, allWidgetIds, type WidgetId } from "@/components/widgets/registry"
 import { LayoutGrid, RotateCcw, Pencil, Lock, Sun, Moon } from "lucide-react"
 
-const STORAGE_LAYOUT_KEY = "adeel-dashboard-layout"
-const STORAGE_WIDGETS_KEY = "adeel-dashboard-widgets"
+const STORAGE_KEY = "adeel-dashboard-data"
 
 function loadFromStorage() {
   try {
-    const layout = localStorage.getItem(STORAGE_LAYOUT_KEY)
-    const widgets = localStorage.getItem(STORAGE_WIDGETS_KEY)
-    return {
-      layout: layout ? JSON.parse(layout) : null,
-      enabledWidgets: widgets ? JSON.parse(widgets) : null,
-    }
-  } catch {
-    return { layout: null, enabledWidgets: null }
-  }
+    const raw = localStorage.getItem(STORAGE_KEY)
+    if (!raw) return null
+    return JSON.parse(raw) as { layouts: Record<string, LayoutItem[]>; enabledWidgets: WidgetId[] }
+  } catch { return null }
 }
 
-function saveToStorage(layout: unknown, enabledWidgets: unknown) {
-  try {
-    localStorage.setItem(STORAGE_LAYOUT_KEY, JSON.stringify(layout))
-    localStorage.setItem(STORAGE_WIDGETS_KEY, JSON.stringify(enabledWidgets))
-  } catch { }
+function saveToStorage(data: { layouts: Record<string, LayoutItem[]>; enabledWidgets: WidgetId[] }) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)) } catch { }
 }
-
-type LayoutItemWithMeta = LayoutItem & { minW: number; minH: number }
 
 export default function Home() {
-  const [layout, setLayout] = useState<LayoutItemWithMeta[]>(() => {
-    const saved = loadFromStorage()
-    return saved.layout ?? getDefaultLayout()
+  const [allLayouts, setAllLayouts] = useState<Record<string, LayoutItem[]>>(() => {
+    return loadFromStorage()?.layouts ?? getDefaultLayouts()
   })
   const [enabledWidgets, setEnabledWidgets] = useState<WidgetId[]>(() => {
-    const saved = loadFromStorage()
-    return saved.enabledWidgets ?? allWidgetIds.filter((id) => id !== "skills")
+    return loadFromStorage()?.enabledWidgets ?? allWidgetIds.filter((id) => id !== "skills")
   })
   const [isEditing, setIsEditing] = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -49,11 +36,15 @@ export default function Home() {
   const saveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const enabledWidgetsRef = useRef(enabledWidgets)
   const [isDark, setIsDark] = useState(false)
+  const [shutterOpen, setShutterOpen] = useState(false)
+  const [initialReveal, setInitialReveal] = useState(true)
 
   useEffect(() => { enabledWidgetsRef.current = enabledWidgets }, [enabledWidgets])
 
   useEffect(() => {
     setIsDark(document.documentElement.classList.contains("dark"))
+    const t = setTimeout(() => setInitialReveal(false), 350)
+    return () => clearTimeout(t)
   }, [])
 
   useEffect(() => {
@@ -66,76 +57,90 @@ export default function Home() {
     return () => ro.disconnect()
   }, [])
 
-  const scheduleSave = useCallback((l: unknown, w: unknown) => {
+  const scheduleSave = useCallback((layouts: Record<string, LayoutItem[]>, widgets: WidgetId[]) => {
     if (saveTimerRef.current) clearTimeout(saveTimerRef.current)
-    saveTimerRef.current = setTimeout(() => saveToStorage(l, w), 400)
+    saveTimerRef.current = setTimeout(() => saveToStorage({ layouts, enabledWidgets: widgets }), 400)
   }, [])
 
   function toggleTheme() {
-    const next = !isDark
-    setIsDark(next)
-    document.documentElement.classList.toggle("dark", next)
-    try { localStorage.setItem("adeel-theme", next ? "dark" : "light") } catch { }
+    if (shutterOpen) return
+    setShutterOpen(true)
+    setTimeout(() => {
+      const next = !isDark
+      setIsDark(next)
+      document.documentElement.classList.toggle("dark", next)
+      try { localStorage.setItem("adeel-theme", next ? "dark" : "light") } catch { }
+      setShutterOpen(false)
+    }, 450)
   }
 
-  const handleLayoutChange = useCallback((newLayout: readonly { i: string; x: number; y: number; w: number; h: number }[]) => {
+  const handleLayoutChange = useCallback((_layout: Layout, layouts: Record<string, Layout | undefined>) => {
     const currentEnabled = enabledWidgetsRef.current
-    const enabledIds = new Set(currentEnabled)
-    setLayout((prev) => {
-      const merged: LayoutItemWithMeta[] = [
-        ...prev.filter((item) => !enabledIds.has(item.i as WidgetId)),
-        ...Array.from(newLayout).map((item) => ({
-          i: item.i, x: item.x, y: item.y, w: item.w, h: item.h,
-          minW: widgetMap[item.i as WidgetId]?.minSize.w ?? 1,
-          minH: widgetMap[item.i as WidgetId]?.minSize.h ?? 2,
-        })),
-      ]
-      scheduleSave(merged, currentEnabled)
-      return merged
-    })
+    const cleaned: Record<string, LayoutItem[]> = {}
+    for (const [bp, l] of Object.entries(layouts)) {
+      if (l) cleaned[bp] = Array.from(l).map((item) => ({
+        i: item.i, x: item.x, y: item.y, w: item.w, h: item.h,
+        minW: widgetMap[item.i as WidgetId]?.minSize.w ?? 1,
+        minH: widgetMap[item.i as WidgetId]?.minSize.h ?? 2,
+      }))
+    }
+    if (Object.keys(cleaned).length > 0) {
+      setAllLayouts(cleaned)
+      scheduleSave(cleaned, currentEnabled)
+    }
   }, [scheduleSave])
 
   function handleToggleWidget(id: WidgetId) {
     const isEnabled = enabledWidgets.includes(id)
     const def = widgetMap[id]
-    let newWidgets: WidgetId[]
-    let newLayout: LayoutItemWithMeta[]
 
     if (isEnabled) {
-      newWidgets = enabledWidgets.filter((w) => w !== id)
-      newLayout = layout.filter((item) => item.i !== id)
-    } else {
-      newWidgets = [...enabledWidgets, id]
-      const already = layout.find((item) => item.i === id)
-      if (already) {
-        newLayout = [...layout]
-      } else {
-        const maxY = layout.reduce((max, item) => Math.max(max, item.y + item.h), 0)
-        newLayout = [...layout, {
-          i: id, x: 0, y: maxY,
-          w: def.defaultSize.w, h: def.defaultSize.h,
-          minW: def.minSize.w, minH: def.minSize.h,
-        }]
+      const newWidgets = enabledWidgets.filter((w) => w !== id)
+      const newLayouts: Record<string, LayoutItem[]> = {}
+      for (const [bp, layout] of Object.entries(allLayouts)) {
+        newLayouts[bp] = layout.filter((item) => item.i !== id)
       }
+      setEnabledWidgets(newWidgets)
+      setAllLayouts(newLayouts)
+      scheduleSave(newLayouts, newWidgets)
+    } else {
+      const newWidgets = [...enabledWidgets, id]
+      const newLayouts: Record<string, LayoutItem[]> = {}
+      for (const [bp, layout] of Object.entries(allLayouts)) {
+        const already = layout.find((item) => item.i === id)
+        if (already) {
+          newLayouts[bp] = [...layout]
+        } else {
+          const maxY = layout.reduce((max, item) => Math.max(max, item.y + item.h), 0)
+          newLayouts[bp] = [...layout, {
+            i: id, x: 0, y: maxY,
+            w: def.defaultSize.w, h: def.defaultSize.h,
+            minW: def.minSize.w, minH: def.minSize.h,
+          }]
+        }
+      }
+      setEnabledWidgets(newWidgets)
+      setAllLayouts(newLayouts)
+      scheduleSave(newLayouts, newWidgets)
     }
-
-    setEnabledWidgets(newWidgets)
-    setLayout(newLayout)
-    scheduleSave(newLayout, newWidgets)
   }
 
   function handleReset() {
-    const defaultLayout = getDefaultLayout()
-    setLayout(defaultLayout)
+    const defaults = getDefaultLayouts()
+    setAllLayouts(defaults)
     const defaultWidgets = allWidgetIds.filter((id) => id !== "skills")
     setEnabledWidgets(defaultWidgets)
-    saveToStorage(defaultLayout, defaultWidgets)
+    saveToStorage({ layouts: defaults, enabledWidgets: defaultWidgets })
   }
 
-  const enabledLayoutItems = layout.filter((item) => enabledWidgets.includes(item.i as WidgetId))
+  const enabledIds = new Set(enabledWidgets)
+  const filteredLayouts: Record<string, LayoutItem[]> = {}
+  for (const [bp, layout] of Object.entries(allLayouts)) {
+    filteredLayouts[bp] = layout.filter((item) => enabledIds.has(item.i as WidgetId))
+  }
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
       {/* Top Navigation Bar */}
       <nav className="flex items-center justify-between gap-4 mb-10 bg-bg-card border border-border-light px-5 py-3 w-full shadow-sm rounded-lg">
         <div className="flex items-center gap-3 shrink-0">
@@ -200,17 +205,19 @@ export default function Home() {
       {/* Dashboard Grid */}
       <div ref={containerRef}>
         {containerWidth !== null && (
-          <GridLayout
+          <ResponsiveGridLayout
             width={containerWidth}
-            gridConfig={{ cols: 24, rowHeight: 80, margin: [12, 16] }}
+            breakpoints={breakpoints}
+            cols={cols}
+            layouts={filteredLayouts}
+            rowHeight={80}
+            margin={[12, 16]}
             dragConfig={{ enabled: isEditing, handle: ".drag-handle" }}
             resizeConfig={{ enabled: isEditing, handles: ["se"] }}
-            layout={enabledLayoutItems}
             onLayoutChange={handleLayoutChange}
             autoSize
           >
-            {enabledLayoutItems.map((item) => {
-              const id = item.i as WidgetId
+            {enabledWidgets.map((id) => {
               const def = widgetMap[id]
               if (!def) return null
               const WidgetComp = def.component
@@ -230,15 +237,32 @@ export default function Home() {
                     <Icon className="w-3.5 h-3.5 text-accent shrink-0" />
                     <span className="text-[10px] font-semibold text-text-secondary font-sans uppercase tracking-[0.12em]">{def.title}</span>
                   </div>
-                  <div className="flex-1 overflow-y-auto"><WidgetComp /></div>
+                  <WidgetComp />
                 </div>
               )
             })}
-          </GridLayout>
+          </ResponsiveGridLayout>
         )}
       </div>
 
       <WidgetDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} enabledWidgets={enabledWidgets} onToggleWidget={handleToggleWidget} />
+
+      {/* Shutter animation overlay — top curtain */}
+      <div className="fixed left-0 right-0 top-0 h-1/2 z-100 pointer-events-none transition-transform duration-[450ms] ease-in-out"
+        style={{
+          transform: shutterOpen || initialReveal ? 'scaleY(1)' : 'scaleY(0)',
+          transformOrigin: 'top',
+          background: 'var(--text-primary)',
+        }}
+      />
+      {/* Shutter animation overlay — bottom curtain */}
+      <div className="fixed left-0 right-0 bottom-0 h-1/2 z-100 pointer-events-none transition-transform duration-[450ms] ease-in-out"
+        style={{
+          transform: shutterOpen || initialReveal ? 'scaleY(1)' : 'scaleY(0)',
+          transformOrigin: 'bottom',
+          background: 'var(--text-primary)',
+        }}
+      />
 
       <footer className="border-t border-border-light mt-14 pt-6 pb-6 text-center">
         <div className="space-x-6 mb-2">
