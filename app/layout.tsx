@@ -17,9 +17,9 @@ const sourceSerif = Source_Serif_4({
 })
 
 export const metadata: Metadata = {
-  title: "Adeel Atta — Software Engineer | University of Sindh",
+  title: "Adeel Atta — Software Engineer (Full-Stack & AI) | Building AI Systems",
   description:
-    "Software engineer, educator, and hackathon competitor. Academic portfolio showcasing projects, teaching, awards, and professional experience.",
+    "Software engineer (Full-Stack & AI) and hackathon competitor. portfolio showcasing projects, teaching, awards, and professional experience.",
   metadataBase: new URL("https://adeelatta.dev"),
   authors: [{ name: "Adeel Atta" }],
   keywords: [
@@ -30,7 +30,6 @@ export const metadata: Metadata = {
     "Next.js developer",
     "TypeScript",
     "portfolio",
-    "University of Sindh",
     "best frontend developer",
     "best frontend developer in Pakistan",
     "best frontend developer in Karachi",
