@@ -75,54 +75,30 @@ export default function Home() {
   }
 
   const handleLayoutChange = useCallback((_layout: Layout, layouts: Record<string, Layout | undefined>) => {
-    const currentEnabled = enabledWidgetsRef.current
-    const cleaned: Record<string, LayoutItem[]> = {}
-    for (const [bp, l] of Object.entries(layouts)) {
-      if (l) cleaned[bp] = Array.from(l).map((item) => ({
-        i: item.i, x: item.x, y: item.y, w: item.w, h: item.h,
-        minW: widgetMap[item.i as WidgetId]?.minSize.w ?? 1,
-        minH: widgetMap[item.i as WidgetId]?.minSize.h ?? 2,
-      }))
-    }
-    if (Object.keys(cleaned).length > 0) {
-      setAllLayouts(cleaned)
-      scheduleSave(cleaned, currentEnabled)
-    }
+    setAllLayouts((prev) => {
+      const result = { ...prev }
+      for (const [bp, l] of Object.entries(layouts)) {
+        if (!l) continue
+        const enabledItems = Array.from(l).map((item) => ({
+          i: item.i, x: item.x, y: item.y, w: item.w, h: item.h,
+          minW: widgetMap[item.i as WidgetId]?.minSize.w ?? 1,
+          minH: widgetMap[item.i as WidgetId]?.minSize.h ?? 2,
+        }))
+        const ids = new Set(enabledItems.map((i) => i.i))
+        const disabledItems = (prev[bp] ?? []).filter((item) => !ids.has(item.i as WidgetId))
+        result[bp] = [...disabledItems, ...enabledItems]
+      }
+      scheduleSave(result, enabledWidgetsRef.current)
+      return result
+    })
   }, [scheduleSave])
 
   function handleToggleWidget(id: WidgetId) {
-    const isEnabled = enabledWidgets.includes(id)
-    const def = widgetMap[id]
-
-    if (isEnabled) {
-      const newWidgets = enabledWidgets.filter((w) => w !== id)
-      const newLayouts: Record<string, LayoutItem[]> = {}
-      for (const [bp, layout] of Object.entries(allLayouts)) {
-        newLayouts[bp] = layout.filter((item) => item.i !== id)
-      }
-      setEnabledWidgets(newWidgets)
-      setAllLayouts(newLayouts)
-      scheduleSave(newLayouts, newWidgets)
-    } else {
-      const newWidgets = [...enabledWidgets, id]
-      const newLayouts: Record<string, LayoutItem[]> = {}
-      for (const [bp, layout] of Object.entries(allLayouts)) {
-        const already = layout.find((item) => item.i === id)
-        if (already) {
-          newLayouts[bp] = [...layout]
-        } else {
-          const maxY = layout.reduce((max, item) => Math.max(max, item.y + item.h), 0)
-          newLayouts[bp] = [...layout, {
-            i: id, x: 0, y: maxY,
-            w: def.defaultSize.w, h: def.defaultSize.h,
-            minW: def.minSize.w, minH: def.minSize.h,
-          }]
-        }
-      }
-      setEnabledWidgets(newWidgets)
-      setAllLayouts(newLayouts)
-      scheduleSave(newLayouts, newWidgets)
-    }
+    const newWidgets = enabledWidgets.includes(id)
+      ? enabledWidgets.filter((w) => w !== id)
+      : [...enabledWidgets, id]
+    setEnabledWidgets(newWidgets)
+    scheduleSave(allLayouts, newWidgets)
   }
 
   function handleReset() {

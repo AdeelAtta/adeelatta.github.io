@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useEffect } from "react"
+import { useRef, useEffect, useState } from "react"
 import { X } from "lucide-react"
 import { widgetDefinitions, type WidgetId } from "./registry"
 
@@ -14,10 +14,23 @@ type WidgetDrawerProps = {
 export function WidgetDrawer({ open, onClose, enabledWidgets, onToggleWidget }: WidgetDrawerProps) {
   const drawerRef = useRef<HTMLDivElement>(null)
   const closeBtnRef = useRef<HTMLButtonElement>(null)
+  const [mounted, setMounted] = useState(false)
+  const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    if (!open) return
-    closeBtnRef.current?.focus()
+    if (open) {
+      setMounted(true)
+      requestAnimationFrame(() => setVisible(true))
+    } else {
+      setVisible(false)
+      const timer = setTimeout(() => setMounted(false), 300)
+      return () => clearTimeout(timer)
+    }
+  }, [open])
+
+  useEffect(() => {
+    if (!mounted) return
+    if (visible) closeBtnRef.current?.focus()
 
     function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") { onClose(); return }
@@ -43,20 +56,28 @@ export function WidgetDrawer({ open, onClose, enabledWidgets, onToggleWidget }: 
 
     document.addEventListener("keydown", handleKeyDown)
     return () => document.removeEventListener("keydown", handleKeyDown)
-  }, [open, onClose])
+  }, [mounted, visible, onClose])
 
-  if (!open) return null
+  if (!mounted) return null
 
   return (
     <>
-      <div className="fixed inset-0 bg-text-primary/8 backdrop-blur-[1px] z-40" onClick={onClose} role="presentation" />
+      <div
+        className={`fixed inset-0 bg-text-primary/8 backdrop-blur-[1px] z-40 transition-all duration-300 ease-in-out ${
+          visible ? "opacity-100" : "opacity-0"
+        }`}
+        onClick={onClose}
+        role="presentation"
+      />
       <div
         id="widget-drawer"
         ref={drawerRef}
         role="dialog"
         aria-modal="true"
         aria-labelledby="widget-drawer-title"
-        className="fixed top-0 right-0 h-full w-80 bg-bg-card border-l border-border z-50 shadow-xl flex flex-col rounded-l-lg"
+        className={`fixed top-0 right-0 h-full w-80 bg-bg-card border-l border-border z-50 shadow-xl flex flex-col rounded-l-lg transition-transform duration-300 ease-in-out ${
+          visible ? "translate-x-0" : "translate-x-full"
+        }`}
       >
         <div className="flex items-center justify-between px-5 py-4 border-b border-border-light">
           <div>
