@@ -21,7 +21,7 @@ export function TeachingWidget() {
           <div className="flex items-start justify-between gap-4">
             <div>
               <h3 className="text-sm font-semibold text-text-primary font-sans">{item.title}</h3>
-              <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:text-accent-hover font-medium mt-0.5 inline-flex items-center gap-1 transition-colors duration-200 font-sans">
+              <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:text-accent-hover font-medium mt-0.5 inline-flex items-center gap-1 transition-colors duration-200 font-sans" aria-label={`${item.org} (opens in new tab)`}>
                 {item.org} <ExternalLink className="w-3 h-3" />
               </a>
             </div>

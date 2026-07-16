@@ -140,16 +140,16 @@ export default function Home() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+    <main id="main-content" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
       {/* Top Navigation Bar */}
       <nav className="flex items-center justify-between gap-4 mb-10 bg-bg-card border border-border-light px-5 py-3 w-full shadow-sm rounded-lg">
         <div className="flex items-center gap-3 shrink-0">
           <div className="w-8 h-8 bg-accent flex items-center justify-center rounded-md">
-            <span className="text-bg-primary font-bold text-sm tracking-tight font-sans">A</span>
+            <span className="text-bg-primary font-bold text-sm tracking-tight font-sans" aria-hidden="true">A</span>
           </div>
           <div className="h-5 w-px bg-border" />
           <div>
-            <span className="text-sm font-semibold text-text-primary hidden sm:inline tracking-tight font-sans">Adeel Atta</span>
+            <h1 className="text-sm font-semibold text-text-primary hidden sm:inline tracking-tight font-sans">Adeel Atta</h1>
             <span className="text-[10px] text-text-muted ml-3 font-sans uppercase tracking-[0.15em] hidden sm:inline">Portfolio</span>
           </div>
         </div>
@@ -161,6 +161,7 @@ export default function Home() {
               isEditing ? "bg-text-primary text-bg-primary shadow-sm" : "text-text-secondary hover:text-text-primary hover:bg-bg-hover"
             }`}
             title={isEditing ? "Lock dashboard" : "Customize layout"}
+            aria-pressed={isEditing}
           >
             {isEditing ? <Lock className="w-3.5 h-3.5" /> : <Pencil className="w-3.5 h-3.5" />}
             <span className="hidden xs:inline">{isEditing ? "Lock" : "Edit"}</span>
@@ -169,7 +170,8 @@ export default function Home() {
           <div className="w-px h-5 bg-border-light mx-1" />
           <button onClick={toggleTheme}
             className="flex items-center gap-1.5 text-xs font-medium py-2 px-3 text-text-secondary hover:text-text-primary hover:bg-bg-hover transition-all duration-200 font-sans rounded-md"
-            title={isDark ? "Switch to light mode" : "Switch to dark mode"}>
+            title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+            aria-pressed={isDark}>
             {isDark ? <Sun className="w-3.5 h-3.5" /> : <Moon className="w-3.5 h-3.5" />}
             <span className="hidden sm:inline">{isDark ? "Light" : "Dark"}</span>
           </button>
@@ -179,7 +181,9 @@ export default function Home() {
               <div className="w-px h-5 bg-border-light mx-0.5" />
               <button onClick={() => setDrawerOpen(true)}
                 className="flex items-center gap-1.5 text-xs font-medium py-2 px-3 text-text-secondary hover:text-text-primary hover:bg-bg-hover transition-all duration-200 font-sans rounded-md"
-                title="Show or hide widgets">
+                title="Show or hide widgets"
+                aria-expanded={drawerOpen}
+                aria-controls="widget-drawer">
                 <LayoutGrid className="w-3.5 h-3.5" />
                 <span className="hidden sm:inline">Widgets</span>
               </button>
@@ -237,7 +241,7 @@ export default function Home() {
                     <Icon className="w-3.5 h-3.5 text-accent shrink-0" />
                     <span className="text-[10px] font-semibold text-text-secondary font-sans uppercase tracking-[0.12em]">{def.title}</span>
                   </div>
-                  <WidgetComp />
+                  <div className="flex-1 overflow-y-auto"><WidgetComp /></div>
                 </div>
               )
             })}
@@ -271,6 +275,6 @@ export default function Home() {
         </div>
         <p className="text-[11px] text-text-muted/60 font-sans">&copy; {new Date().getFullYear()} Adeel Atta</p>
       </footer>
-    </div>
+    </main>
   )
 }

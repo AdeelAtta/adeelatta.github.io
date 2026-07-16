@@ -20,7 +20,7 @@ export function ProjectsWidget() {
             <div>
               <h3 className="text-sm font-semibold text-text-primary font-sans">
                 {project.link ? (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-200">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors duration-200" aria-label={`${project.title} (opens in new tab)`}>
                     {project.title} <ExternalLink className="w-3 h-3 inline" />
                   </a>
                 ) : project.title}

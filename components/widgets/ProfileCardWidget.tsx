@@ -26,13 +26,13 @@ export function ProfileCardWidget() {
         </div>
       </div>
       <div className="space-y-2">
-        <a href="https://adeelatta.dev" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-text-secondary hover:text-text-primary transition-colors duration-200 group">
+        <a href="https://adeelatta.dev" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-text-secondary hover:text-text-primary transition-colors duration-200 group" aria-label="Website (opens in new tab)">
           <Globe className="w-3.5 h-3.5 text-accent shrink-0" /> adeelatta.dev
         </a>
-        <a href="https://www.linkedin.com/in/adeel-atta/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-text-secondary hover:text-text-primary transition-colors duration-200 group">
+        <a href="https://www.linkedin.com/in/adeel-atta/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-text-secondary hover:text-text-primary transition-colors duration-200 group" aria-label="LinkedIn (opens in new tab)">
           <Linkedin className="w-3.5 h-3.5 text-accent shrink-0" /> linkedin.com/in/adeel-atta
         </a>
-        <a href="https://github.com/AdeelAtta" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-text-secondary hover:text-text-primary transition-colors duration-200 group">
+        <a href="https://github.com/AdeelAtta" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 text-text-secondary hover:text-text-primary transition-colors duration-200 group" aria-label="GitHub (opens in new tab)">
           <Github className="w-3.5 h-3.5 text-accent shrink-0" /> github.com/AdeelAtta
         </a>
       </div>

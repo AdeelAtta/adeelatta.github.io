@@ -18,9 +18,11 @@ export function CompetitionsWidget() {
           <div className="flex items-start gap-3">
             <span className="text-accent text-xs mt-1 shrink-0 font-sans">▸</span>
             <div>
-              <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-text-primary hover:text-accent transition-colors duration-200 font-sans">
-                {item.title} <ExternalLink className="w-3 h-3 inline" />
-              </a>
+              <h3 className="text-sm font-semibold font-sans">
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-text-primary hover:text-accent transition-colors duration-200" aria-label={`${item.title} (opens in new tab)`}>
+                  {item.title} <ExternalLink className="w-3 h-3 inline" />
+                </a>
+              </h3>
               <p className="text-sm text-text-secondary mt-0.5 leading-relaxed">{item.desc}</p>
               {"team" in item && item.team && (
                 <div className="mt-2.5 border border-border-light p-3 bg-bg-elevated">
