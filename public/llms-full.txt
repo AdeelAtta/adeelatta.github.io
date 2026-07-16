@@ -1,4 +1,4 @@
-# Adeel Atta — Full Profile
+# Adeel Atta - Full Profile
 
 ## Personal Information
 - **Name:** Adeel Atta
@@ -12,31 +12,31 @@
 - **Portfolio:** https://adeelatta.dev
 
 ## Education
-**BSE in Software Engineering** — University of Sindh (Jan 2020 – May 2024)
+**BSE in Software Engineering** - University of Sindh (Jan 2020 – May 2024)
 - CGPA: 3.71 / 4.00
 - Coursework: Software Engineering, Data Science, Machine Learning, Computer Networks, Information Security, Web Engineering, Mobile App Development, Data Warehousing, Software Quality Assurance, Design & Analysis of Algorithms
 
 ## Awards & Honors
-- **Gold Medal** — Awarded for securing 1st position in Software Engineering at the University of Sindh
-- **Silver Medal** — Awarded for securing 2nd position in the Faculty of Engineering and Technology at the University of Sindh
-- **Prime Minister Laptop Award** — Recipient of the Prime Minister Laptop Award during undergraduate studies
+- **Gold Medal** - Awarded for securing 1st position in Software Engineering at the University of Sindh
+- **Silver Medal** - Awarded for securing 2nd position in the Faculty of Engineering and Technology at the University of Sindh
+- **Prime Minister Laptop Award** - Recipient of the Prime Minister Laptop Award during undergraduate studies
 
 ## International Competitions & Hackathons
-1. **Geekle AI Hackathon** (Team FR1) — 9 members — link
-2. **Meta Hacker Cup 2024** — Ranked 6,752 out of 30,000+ global participants
-3. **Harvard CS50 Puzzle Day** (Team CS50 Puzzle Squad) — 4 members
-4. **Visionary Award — LLM Hackathon (Materials Science)** (Team Best Team) — 10 members — Built a RAG-powered system for extracting structured data from scientific papers
-5. **Llama 3 Hackathon** (Team Fastian) — 4 members — Built an LLM-as-a-judge chat evaluation tool using the Llama 3 model
-6. **Pak-Angels Gen AI Hackathon** (Team Smart Solution) — 5 members — Developed AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER data and GPT-4
-7. **WordPress Plugin Hackathon** — Contributed to programmatic plugin feature development
+1. **Geekle AI Hackathon** (Team FR1) - 9 members - link
+2. **Meta Hacker Cup 2024** - Ranked 6,752 out of 30,000+ global participants
+3. **Harvard CS50 Puzzle Day** (Team CS50 Puzzle Squad) - 4 members
+4. **Visionary Award - LLM Hackathon (Materials Science)** (Team Best Team) - 10 members - Built a RAG-powered system for extracting structured data from scientific papers
+5. **Llama 3 Hackathon** (Team Fastian) - 4 members - Built an LLM-as-a-judge chat evaluation tool using the Llama 3 model
+6. **Pak-Angels Gen AI Hackathon** (Team Smart Solution) - 5 members - Developed AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER data and GPT-4
+7. **WordPress Plugin Hackathon** - Contributed to programmatic plugin feature development
 
 ## Teaching & Mentoring
-- **Stanford Code in Place** — Section Leader (Apr 2026 – present)
-- **ICodeGuru** — Moderator & Trainer (May 2023 – present)
+- **Stanford Code in Place** - Section Leader (Apr 2026 – present)
+- **ICodeGuru** - Moderator & Trainer (May 2023 – present)
 
 ## Professional Experience
-- **React.js Developer** at TABS Technology (Sep 2024 – Jan 2025) — Built and maintained 6+ web applications using React, TypeScript, and Node.js
-- **AI Chatbot Developer** at Cents的事件 (Remote, Pakistan) (Jul 2022 – Nov 2022) — Configured workflow automation and integrated LLMs for customer service
+- **React.js Developer** at TABS Technology (Sep 2024 – Jan 2025) - Built and maintained 6+ web applications using React, TypeScript, and Node.js
+- **AI Chatbot Developer** at Cents的事件 (Remote, Pakistan) (Jul 2022 – Nov 2022) - Configured workflow automation and integrated LLMs for customer service
 
 ## Technical Skills
 - **AI & Machine Learning:** Python (Pandas, NumPy), PyTorch, Scikit-learn, HuggingFace, RAG, LLM Engineering, ML Model Training, Deep Learning
@@ -44,17 +44,17 @@
 - **Blockchain & Web3:** Cosmos SDK, Solana, Web3.js, Ethers.js, WalletConnect, MetaMask, EVM, Staking Platforms
 
 ## Projects
-- **Personify AI** — AI chat assistant Chrome extension — https://chromewebstore.google.com/detail/personify-ai-chat-assista/dfokiabcgalihnedbbjbkdfhjeokdpne
-- **EthicalNode Platform** — Maintained distributed staking network for 900+ edge nodes with $1M+ on-chain capital — https://ethicalnode.com
-- **Ethical Wallet** — Chrome extension wallet for secure browser-based blockchain transactions — https://chromewebstore.google.com/detail/ethical-wallet/nfaepmamdapehcbedhejbjcpnlcldodi
-- **Decentr.ai** — MERN-stack multi-model AI aggregation hub & API gateway
-- **Environmental & Urban Metrics Modeling Tool** — Analytical pipeline for NASA POWER meteorological data — https://urban-ai.streamlit.app/
-- **P2P File Sharing with Blockchain** — Decentralized file sharing using WebRTC, IPFS, and Ethereum smart contracts — https://p2pblockshare.vercel.app/
-- **YouTube Comment Analyzer** — ML-powered toxicity and spam detection with Streamlit — https://ytcommentanalyzer.streamlit.app/
-- **E-Learning Platform with AI** — AI-powered educational platform with content recommendations
+- **Personify AI** - AI chat assistant Chrome extension - https://chromewebstore.google.com/detail/personify-ai-chat-assista/dfokiabcgalihnedbbjbkdfhjeokdpne
+- **EthicalNode Platform** - Maintained distributed staking network for 900+ edge nodes with $1M+ on-chain capital - https://ethicalnode.com
+- **Ethical Wallet** - Chrome extension wallet for secure browser-based blockchain transactions - https://chromewebstore.google.com/detail/ethical-wallet/nfaepmamdapehcbedhejbjcpnlcldodi
+- **Decentr.ai** - MERN-stack multi-model AI aggregation hub & API gateway
+- **Environmental & Urban Metrics Modeling Tool** - Analytical pipeline for NASA POWER meteorological data - https://urban-ai.streamlit.app/
+- **P2P File Sharing with Blockchain** - Decentralized file sharing using WebRTC, IPFS, and Ethereum smart contracts - https://p2pblockshare.vercel.app/
+- **YouTube Comment Analyzer** - ML-powered toxicity and spam detection with Streamlit - https://ytcommentanalyzer.streamlit.app/
+- **E-Learning Platform with AI** - AI-powered educational platform with content recommendations
 
 ## Site Structure
 Single-page application with 3 tabs:
-1. **Introduction** — Bio, Education, Awards & Honors, International Competitions & Hackathons
-2. **Teaching & Mentor** — Teaching positions and mentoring experience
-3. **Experience** — Professional Experience, Technical Skills, Projects
+1. **Introduction** - Bio, Education, Awards & Honors, International Competitions & Hackathons
+2. **Teaching & Mentor** - Teaching positions and mentoring experience
+3. **Experience** - Professional Experience, Technical Skills, Projects

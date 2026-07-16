@@ -41,7 +41,7 @@ export function WidgetDrawer({ open, onClose, enabledWidgets, onToggleWidget }: 
                 <Icon className={`w-4 h-4 shrink-0 transition-colors duration-200 ${isEnabled ? "text-accent" : ""}`} />
                 <span className="flex-1 text-sm font-medium font-sans">{w.title}</span>
                 <div className={`w-9 h-[18px] rounded-full transition-colors duration-200 relative shrink-0 ${isEnabled ? "bg-accent" : "bg-border"}`}>
-                  <div className={`absolute top-0.5 w-3.5 h-3.5 rounded-full bg-white transition-all duration-200 shadow-sm ${isEnabled ? "left-[18px]" : "left-0.5"}`} />
+                  <div className={`absolute top-0.5 w-3.5 h-3.5 rounded-full bg-bg-card transition-all duration-200 shadow-sm ${isEnabled ? "left-[18px]" : "left-0.5"}`} />
                 </div>
               </button>
             )

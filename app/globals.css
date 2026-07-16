@@ -3,12 +3,12 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --bg-primary: #f8f6f3;
+  --bg-primary: #eaeaea;
   --bg-card: #ffffff;
   --bg-elevated: #fcfbf9;
   --bg-hover: #f3f1ed;
 
-  --text-primary: #1c1917;
+  --text-primary: #141515;
   --text-secondary: #78716c;
   --text-muted: #a8a29e;
 
@@ -18,9 +18,30 @@
   --accent: #c4a35a;
   --accent-hover: #b8943f;
 
-  --shadow-sm: 0 1px 2px rgba(28, 25, 23, 0.04);
-  --shadow-md: 0 4px 12px rgba(28, 25, 23, 0.05);
-  --shadow-lg: 0 8px 28px rgba(28, 25, 23, 0.07);
+  --shadow-sm: 0 1px 2px rgba(20, 21, 21, 0.04);
+  --shadow-md: 0 4px 12px rgba(20, 21, 21, 0.05);
+  --shadow-lg: 0 8px 28px rgba(20, 21, 21, 0.07);
+}
+
+.dark {
+  --bg-primary: #1a1817;
+  --bg-card: #252220;
+  --bg-elevated: #2d2a27;
+  --bg-hover: #35322f;
+
+  --text-primary: #e7e5e4;
+  --text-secondary: #a8a29e;
+  --text-muted: #6b6560;
+
+  --border: #3a3633;
+  --border-light: #2d2a27;
+
+  --accent: #c4a35a;
+  --accent-hover: #d4b36a;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.55);
 }
 
 @theme inline {
@@ -65,7 +86,12 @@
 
   ::selection {
     background-color: rgba(196, 163, 90, 0.25);
-    color: #1c1917;
+    color: #141515;
+  }
+
+  .dark ::selection {
+    background-color: rgba(196, 163, 90, 0.35);
+    color: #e7e5e4;
   }
 
   ::-webkit-scrollbar {
@@ -82,8 +108,16 @@
     border-radius: 999px;
   }
 
+  .dark ::-webkit-scrollbar-thumb {
+    background: #4a4642;
+  }
+
   ::-webkit-scrollbar-thumb:hover {
     background: #c2bfb7;
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: #5a5652;
   }
 }
 

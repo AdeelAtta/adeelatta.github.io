@@ -6,7 +6,7 @@ import "react-grid-layout/css/styles.css"
 
 import { WidgetDrawer } from "@/components/widgets/WidgetDrawer"
 import { widgetMap, getDefaultLayout, allWidgetIds, type WidgetId } from "@/components/widgets/registry"
-import { LayoutGrid, RotateCcw, Pencil, Lock } from "lucide-react"
+import { LayoutGrid, RotateCcw, Pencil, Lock, Sun, Moon } from "lucide-react"
 
 const STORAGE_LAYOUT_KEY = "adeel-dashboard-layout"
 const STORAGE_WIDGETS_KEY = "adeel-dashboard-widgets"
@@ -48,8 +48,13 @@ export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null)
   const saveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const enabledWidgetsRef = useRef(enabledWidgets)
+  const [isDark, setIsDark] = useState(false)
 
   useEffect(() => { enabledWidgetsRef.current = enabledWidgets }, [enabledWidgets])
+
+  useEffect(() => {
+    setIsDark(document.documentElement.classList.contains("dark"))
+  }, [])
 
   useEffect(() => {
     if (!containerRef.current) return
@@ -65,6 +70,13 @@ export default function Home() {
     if (saveTimerRef.current) clearTimeout(saveTimerRef.current)
     saveTimerRef.current = setTimeout(() => saveToStorage(l, w), 400)
   }, [])
+
+  function toggleTheme() {
+    const next = !isDark
+    setIsDark(next)
+    document.documentElement.classList.toggle("dark", next)
+    try { localStorage.setItem("adeel-theme", next ? "dark" : "light") } catch { }
+  }
 
   const handleLayoutChange = useCallback((newLayout: readonly { i: string; x: number; y: number; w: number; h: number }[]) => {
     const currentEnabled = enabledWidgetsRef.current
@@ -128,7 +140,7 @@ export default function Home() {
       <nav className="flex items-center justify-between gap-4 mb-10 bg-bg-card border border-border-light px-5 py-3 w-full shadow-sm rounded-lg">
         <div className="flex items-center gap-3 shrink-0">
           <div className="w-8 h-8 bg-accent flex items-center justify-center rounded-md">
-            <span className="text-white font-bold text-sm tracking-tight font-sans">A</span>
+            <span className="text-bg-primary font-bold text-sm tracking-tight font-sans">A</span>
           </div>
           <div className="h-5 w-px bg-border" />
           <div>
@@ -141,12 +153,20 @@ export default function Home() {
           <button
             onClick={() => setIsEditing(!isEditing)}
             className={`flex items-center gap-1.5 text-xs font-medium py-2 px-3 transition-all duration-200 font-sans rounded-md ${
-              isEditing ? "bg-text-primary text-white shadow-sm" : "text-text-secondary hover:text-text-primary hover:bg-bg-hover"
+              isEditing ? "bg-text-primary text-bg-primary shadow-sm" : "text-text-secondary hover:text-text-primary hover:bg-bg-hover"
             }`}
             title={isEditing ? "Lock dashboard" : "Customize layout"}
           >
             {isEditing ? <Lock className="w-3.5 h-3.5" /> : <Pencil className="w-3.5 h-3.5" />}
             <span className="hidden xs:inline">{isEditing ? "Lock" : "Edit"}</span>
+          </button>
+
+          <div className="w-px h-5 bg-border-light mx-1" />
+          <button onClick={toggleTheme}
+            className="flex items-center gap-1.5 text-xs font-medium py-2 px-3 text-text-secondary hover:text-text-primary hover:bg-bg-hover transition-all duration-200 font-sans rounded-md"
+            title={isDark ? "Switch to light mode" : "Switch to dark mode"}>
+            {isDark ? <Sun className="w-3.5 h-3.5" /> : <Moon className="w-3.5 h-3.5" />}
+            <span className="hidden sm:inline">{isDark ? "Light" : "Dark"}</span>
           </button>
 
           {isEditing && (
