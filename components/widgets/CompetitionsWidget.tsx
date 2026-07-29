@@ -9,6 +9,11 @@ const competitions: {
   team?: { name: string; members: TeamMember[] }
 }[] = [
   {
+    title: "Schema-Aware AI-Powered Data Mapping Module (AMD Hackathon)",
+    desc: "Built an NL-to-SQL module with an interactive frontend enabling natural language querying across schemas, automatic SQL generation, and cross-schema data integration.",
+    link: "https://github.com/AdeelAtta/nl_2_analytics",
+  },
+  {
     title: "Microsoft Agents League Hackathon (Nexboard)",
     desc: "Developed an AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive simulation and marketing/email simulations for sales teams.",
     link: "https://github.com/SoomroBilal/Nexboard",
