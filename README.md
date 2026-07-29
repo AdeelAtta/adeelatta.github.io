@@ -39,6 +39,7 @@ University of Sindh, Jamshoro - Jan 2020 – May 2024
 
 ## International Competitions & Hackathons
 
+- **Microsoft Agents League Hackathon (Nexboard)** - Developed an AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive simulation and marketing/email simulations for sales teams.
 - **1st Place - Geekle AI Hackathon** - Developed a Text-to-Diagram module for generating structured architecture diagrams using AI. Team: FR1
 - **Visionary Award - LLM Hackathon (Materials Science & Chemistry)** - Visionary Award Recipient. Built Forja de Matéria AI, an LLM/RAG platform for highly structured automated data extraction. Team: Best Team
 - **Meta Hacker Cup 2024** - Ranked 6,752 out of 30,000+ global participants and 56th in Pakistan

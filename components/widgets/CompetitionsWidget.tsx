@@ -9,6 +9,11 @@ const competitions: {
   team?: { name: string; members: TeamMember[] }
 }[] = [
   {
+    title: "Microsoft Agents League Hackathon (Nexboard)",
+    desc: "Developed an AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive simulation and marketing/email simulations for sales teams.",
+    link: "https://github.com/SoomroBilal/Nexboard",
+  },
+  {
     title: "1st Place — Geekle AI Hackathon",
     desc: "Developed a Text-to-Diagram module for generating structured architecture diagrams using AI.",
     link: "https://www.linkedin.com/posts/geekle-us_geeklehackathon-aihackathon-geekle-activity-7220063052048609281-K0pZ/",
@@ -99,11 +104,6 @@ const competitions: {
     title: "WordPress Plugin Hackathon",
     desc: "Contributed to programmatic plugin feature development.",
     link: "https://www.linkedin.com/in/adeel-atta/details/certifications/1724527785101/single-media-viewer/?profileId=ACoAADEzf0IBN3mJCSm42DzvYL8IlPhLNTOqo1k",
-  },
-  {
-    title: "Microsoft Agents League Hackathon (Nexboard)",
-    desc: "Developed an AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive simulation and marketing/email simulations for sales teams.",
-    link: "https://github.com/SoomroBilal/Nexboard",
   },
 ]
 
