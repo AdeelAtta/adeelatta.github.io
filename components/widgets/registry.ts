@@ -61,10 +61,10 @@ export function getDefaultLayout() {
     { i: "teaching",     x: 6,  y: 2,  w: 9,  h: 5,  minW: 4, minH: 4 },
     { i: "education",    x: 15, y: 2,  w: 9,  h: 4,  minW: 4, minH: 3 },
     { i: "awards",       x: 15, y: 6,  w: 9,  h: 4,  minW: 4, minH: 3 },
-    { i: "competitions", x: 0,  y: 7,  w: 12, h: 16, minW: 6, minH: 4 },
+    { i: "competitions", x: 0,  y: 7,  w: 12, h: 19, minW: 6, minH: 4 },
     { i: "stats",        x: 12, y: 7,  w: 3,  h: 3,  minW: 1, minH: 1 },
-    { i: "experience",   x: 12, y: 10, w: 12, h: 5,  minW: 6, minH: 3 },
-    { i: "projects",     x: 12, y: 15, w: 12, h: 8,  minW: 6, minH: 4 },
+    { i: "experience",   x: 12, y: 10, w: 12, h: 8,  minW: 6, minH: 3 },
+    { i: "projects",     x: 12, y: 18, w: 12, h: 10, minW: 6, minH: 4 },
   ]
 }
 

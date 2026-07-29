@@ -29,7 +29,7 @@ export default function Home() {
   const [enabledWidgets, setEnabledWidgets] = useState<WidgetId[]>(() => {
     return loadFromStorage()?.enabledWidgets ?? allWidgetIds.filter((id) => id !== "skills")
   })
-  const [isEditing, setIsEditing] = useState(false)
+  const [isEditing, setIsEditing] = useState(true)
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [containerWidth, setContainerWidth] = useState<number | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
