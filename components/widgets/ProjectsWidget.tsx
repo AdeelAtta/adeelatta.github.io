@@ -8,6 +8,7 @@ const projects = [
   { title: "Decentr.ai", desc: "MERN-stack platform consolidating multi-vendor AI access under a decentralized wallet subscription gateway." },
   { title: "Environmental & Urban Metrics Modeling Tool", desc: "Analytical pipeline for structural parsing of multi-variable NASA POWER meteorological datasets.", link: "https://urban-ai.streamlit.app/" },
   { title: "Plant Disease Detection & Classification", desc: "Deep learning computer vision architectures using PyTorch for automated plant disease identification.", link: "https://github.com/AdeelAtta/FE-plant-disease-detection" },
+  { title: "IndexFlow – Brave Search Indexer", desc: "Chrome extension that automates bulk URL submission to Brave Search. Supports XML sitemaps, sitemap URLs, and manual paste input.", link: "https://adeelatta.dev/indexflow" },
 ]
 
 export function ProjectsWidget() {
