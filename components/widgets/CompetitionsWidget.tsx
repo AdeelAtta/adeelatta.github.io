@@ -34,7 +34,7 @@ const competitions: {
   },
   {
     title: "1st Place — Geekle AI Hackathon",
-    desc: "Developed a Text-to-Diagram module for generating structured architecture diagrams using AI.",
+    desc: "1st Place — Developed a Text-to-Diagram module for generating structured architecture diagrams using AI. Won $2,000 prize.",
     link: "https://www.linkedin.com/posts/geekle-us_geeklehackathon-aihackathon-geekle-activity-7220063052048609281-K0pZ/",
     team: {
       name: "FR1",
