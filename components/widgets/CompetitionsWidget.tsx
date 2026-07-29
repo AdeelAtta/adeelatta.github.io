@@ -12,11 +12,25 @@ const competitions: {
     title: "Schema-Aware AI-Powered Data Mapping Module (AMD Hackathon)",
     desc: "Built an NL-to-SQL module with an interactive frontend enabling natural language querying across schemas, automatic SQL generation, and cross-schema data integration.",
     link: "https://github.com/AdeelAtta/nl_2_analytics",
+    team: {
+      name: "Team",
+      members: [
+        { name: "Adeel Atta", url: "https://www.linkedin.com/in/adeel-atta/" },
+        { name: "Muhammad Bilal Soomro", url: "https://www.linkedin.com/in/muhammad-bilal-soomro-972494214/" },
+      ],
+    },
   },
   {
     title: "Microsoft Agents League Hackathon (Nexboard)",
     desc: "Developed an AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive simulation and marketing/email simulations for sales teams.",
     link: "https://github.com/SoomroBilal/Nexboard",
+    team: {
+      name: "Nexboard",
+      members: [
+        { name: "Adeel Atta", url: "https://www.linkedin.com/in/adeel-atta/" },
+        { name: "Muhammad Bilal Soomro", url: "https://www.linkedin.com/in/muhammad-bilal-soomro-972494214/" },
+      ],
+    },
   },
   {
     title: "1st Place — Geekle AI Hackathon",
