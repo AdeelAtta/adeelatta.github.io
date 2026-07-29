@@ -1,8 +1,10 @@
 const jobs = [
-  { title: "Frontend Engineer (Software Engineer II)", org: "Mentalyc", period: "Apr 2025 – Mar 2026",
-    desc: "worked on end-to-end frontend development features for an Mental health platform serving 30,000+ users. participated in building a modular design system, automated developer workflows, and wrote BDD test cases." },
-  { title: "Frontend Developer (Software Engineer I)", org: "Analog Mutations", period: "Feb 2023 – Mar 2025",
-    desc: "Developed user-centric interfaces for Web3 applications serving 900+ users. Integrated blockchain functionality using Cosmos SDK and Solana. Collaborated on Node.js and Express backend integrations." },
+  { title: "Frontend Engineer", org: "Mentalyc", period: "Apr 2025 – Mar 2026",
+    desc: "Developed and maintained React & TypeScript frontends integrated with RESTful APIs, serving 30,000+ users in an Agile environment. Wrote comprehensive unit, integration, and E2E tests (JEST, Playwright, BDD/Cucumber) and maintained technical documentation for frontend applications and development processes. Conducted code reviews, collaborated with UX Designers and Architects to translate business requirements into scalable technical solutions, and participated in sprint planning and retrospectives." },
+  { title: "Frontend Developer", org: "Analog Mutations", period: "Feb 2023 – Apr 2025",
+    desc: "Built and optimized React-based user interfaces and RESTful API integrations for high-concurrency, cross-functional services serving hundreds of active users. Maintained strict Git version control practices, spearheading systematic code review workflows and managing CI/CD release pipelines via GitHub. Designed and documented frontend application architecture, troubleshooting and resolving issues in deployed applications while identifying opportunities for performance optimization and refactoring." },
+  { title: "Section Leader", org: "Stanford University: Code in Place", period: "Apr 2026 – Jun 2026",
+    desc: "Led a group of diverse students through the first half of Stanford's flagship intro to Python course, CS106A. Gained interpersonal skills, practiced engaging pedagogy, and demonstrated mastery of basic Python principles." },
 ]
 
 export function ExperienceWidget() {
