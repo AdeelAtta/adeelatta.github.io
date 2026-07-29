@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 }
 
-const DEMO_URL = "https://nl-2-analytics.vercel.app"
+const DEMO_URL = "https://nl-2-analytics.vercel.app/auth/login"
 const API_URL = "https://schemaintern-backend.onrender.com"
 
 const features = [
