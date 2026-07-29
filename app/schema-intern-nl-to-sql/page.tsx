@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 }
 
 const DEMO_URL = "https://nl-2-analytics.vercel.app/auth/login"
-const API_URL = "https://schemaintern-backend.onrender.com"
+const API_URL = "https://schemaintern-backend.onrender.com/docs"
 
 const features = [
   { icon: Database, title: "Connect Any Database", desc: "PostgreSQL, MySQL, Snowflake, BigQuery — SchemaIntern discovers your schema automatically. No manual YAML or config files." },
