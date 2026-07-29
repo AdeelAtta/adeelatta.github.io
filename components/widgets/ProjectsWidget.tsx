@@ -7,7 +7,7 @@ const projects = [
   { title: "Personify Chat Assistant", desc: "Chrome extension providing AI-powered real-time messaging suggestions across WhatsApp Web and LinkedIn.", link: "https://github.com/SameerVers3/Chat-Evaluator-llama3-hackathon" },
   { title: "Decentr.ai", desc: "MERN-stack platform consolidating multi-vendor AI access under a decentralized wallet subscription gateway." },
   { title: "Pak-Angels Gen AI Hackathon – Urban AI Tool", desc: "AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER meteorological data and GPT-4. Built for Pak-Angels Gen AI Hackathon.", link: "https://adeelatta.dev/pak-angels-hackathon" },
-  { title: "Plant Disease Detection & Classification", desc: "Deep learning computer vision architectures using PyTorch for automated plant disease identification.", link: "https://github.com/AdeelAtta/FE-plant-disease-detection" },
+  { title: "Plant Disease Detection & Classification", desc: "Deep learning computer vision architectures using PyTorch for automated plant disease identification.", link: "https://adeelatta.dev/plant-disease-detection" },
   { title: "IndexFlow – Brave Search Indexer", desc: "Chrome extension that automates bulk URL submission to Brave Search. Supports XML sitemaps, sitemap URLs, and manual paste input.", link: "https://adeelatta.dev/indexflow" },
   { title: "SchemaIntern – DB-Aware NL to SQL", desc: "Schema-aware natural language to SQL. Connect your database and ask questions in plain English. Generates accurate, safe SQL.", link: "https://adeelatta.dev/schema-intern-nl-to-sql" },
 ]
