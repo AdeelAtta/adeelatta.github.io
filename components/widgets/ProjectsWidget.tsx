@@ -4,7 +4,7 @@ const projects = [
   { title: "Mentalyc Web App", desc: "Designed and implemented a modular design system for an AI mental health platform serving 30,000+ active subscribers.", link: "https://app.mentalyc.com" },
   { title: "Mentalyc Chrome Extension", desc: "Developed frontend design system with API and web integrations for auto notes transfer to different EHR systems.", link: "https://chromewebstore.google.com/detail/mentalyc/jhlkppjeaacmnbpdmlflkknfjfjkpfgj" },
   { title: "Ethical Wallet", desc: "Built a Chrome extension wallet enabling secure browser-based blockchain transactions.", link: "https://chromewebstore.google.com/detail/ethical-wallet/nfaepmamdapehcbedhejbjcpnlcldodi" },
-  { title: "Personify Chat Assistant", desc: "Chrome extension providing AI-powered real-time messaging suggestions across WhatsApp Web and LinkedIn.", link: "https://github.com/SameerVers3/Chat-Evaluator-llama3-hackathon" },
+  { title: "Personify Chat Assistant", desc: "Chrome extension providing AI-powered real-time messaging suggestions across WhatsApp Web and LinkedIn.", link: "https://adeelatta.dev/personify-chat-assistant" },
   { title: "Decentr.ai", desc: "MERN-stack platform consolidating multi-vendor AI access under a decentralized wallet subscription gateway." },
   { title: "Pak-Angels Gen AI Hackathon – Urban AI Tool", desc: "AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER meteorological data and GPT-4. Built for Pak-Angels Gen AI Hackathon.", link: "https://adeelatta.dev/pak-angels-hackathon" },
   { title: "Plant Disease Detection & Classification", desc: "Deep learning computer vision architectures using PyTorch for automated plant disease identification.", link: "https://adeelatta.dev/plant-disease-detection" },
