@@ -40,12 +40,13 @@ University of Sindh, Jamshoro - Jan 2020 – May 2024
 ## International Competitions & Hackathons
 
 - **1st Place - Geekle AI Hackathon** - Developed a Text-to-Diagram module for generating structured architecture diagrams using AI. Team: FR1
-- **Visionary Award - LLM Hackathon (Materials Science)** - Built a RAG-powered system for extracting structured data from scientific papers. Team: Best Team
-- **Meta Hacker Cup 2024** - Ranked 6,752 out of 30,000+ global participants
+- **Visionary Award - LLM Hackathon (Materials Science & Chemistry)** - Visionary Award Recipient. Built Forja de Matéria AI, an LLM/RAG platform for highly structured automated data extraction. Team: Best Team
+- **Meta Hacker Cup 2024** - Ranked 6,752 out of 30,000+ global participants and 56th in Pakistan
 - **Harvard CS50 Puzzle Day** - Global puzzle-solving competition demonstrating problem-solving and logical reasoning skills. Team: CS50 Puzzle Squad
 - **Llama 3 Hackathon** - Built an LLM-as-a-judge chat evaluation tool using the Llama 3 model. Team: Fastian
 - **Pak-Angels Gen AI Hackathon** - Developed AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER data and GPT-4. Team: Smart Solution
 - **WordPress Plugin Hackathon** - Contributed to programmatic plugin feature development
+- **Microsoft Agents League Hackathon (Nexboard)** - Developed an AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive simulation and marketing/email simulations for sales teams. Team: Nexboard
 
 ---
 
@@ -90,6 +91,7 @@ Led a group of diverse students through the first half of Stanford's flagship in
 - **Decentr.ai: Multi-Model AI Aggregation Hub & API Gateway** - MERN-stack platform consolidating multi-vendor AI access (GPT-4, Llama, Claude, DALL-E) under a decentralized wallet subscription gateway with scalable backend REST APIs.
 - **Environmental & Urban Metrics Modeling Tool** - Engineered an analytical pipeline for structural parsing of multi-variable NASA POWER meteorological datasets. Integrated empirical parameters with LLM runtime contexts for climate-resiliency evaluation.
 - **Plant Disease Detection & Classification** - Implemented deep learning computer vision architectures using PyTorch to automate plant disease identification, optimizing classification accuracy for edge processing scenarios.
+- **Schema-Aware AI-Powered Data Mapping Module (AMD Hackathon)** - Built an NL-to-SQL module with an interactive frontend enabling natural language querying across schemas, automatic SQL generation, and cross-schema data integration.
 
 ---
 

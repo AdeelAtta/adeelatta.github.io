@@ -9,6 +9,7 @@ const projects = [
   { title: "Environmental & Urban Metrics Modeling Tool", desc: "Analytical pipeline for structural parsing of multi-variable NASA POWER meteorological datasets.", link: "https://urban-ai.streamlit.app/" },
   { title: "Plant Disease Detection & Classification", desc: "Deep learning computer vision architectures using PyTorch for automated plant disease identification.", link: "https://github.com/AdeelAtta/FE-plant-disease-detection" },
   { title: "IndexFlow – Brave Search Indexer", desc: "Chrome extension that automates bulk URL submission to Brave Search. Supports XML sitemaps, sitemap URLs, and manual paste input.", link: "https://adeelatta.dev/indexflow" },
+  { title: "Schema-Aware AI-Powered Data Mapping Module (AMD Hackathon)", desc: "Built an NL-to-SQL module with an interactive frontend enabling natural language querying across schemas, automatic SQL generation, and cross-schema data integration.", link: "https://github.com/AdeelAtta/nl_2_analytics" },
 ]
 
 export function ProjectsWidget() {

@@ -29,7 +29,7 @@ const competitions: {
   },
   {
     title: "Meta Hacker Cup 2024",
-    desc: "Ranked 6,752 out of 30,000+ global participants.",
+    desc: "Ranked 6,752 out of 30,000+ global participants and 56th in Pakistan.",
     link: "https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/653288849938114",
   },
   {
@@ -47,8 +47,8 @@ const competitions: {
     },
   },
   {
-    title: "Visionary Award — LLM Hackathon (Materials Science)",
-    desc: "Built a RAG-powered system for extracting structured data from scientific papers.",
+    title: "Visionary Award — LLM Hackathon (Materials Science & Chemistry)",
+    desc: "Visionary Award Recipient. Built Forja de Matéria AI, an LLM/RAG platform for highly structured automated data extraction.",
     link: "https://www.linkedin.com/posts/maryam-ghadrdan-phd-18a7a310_visionaryaward-llmhackathon-aiforscience-activity-7378534271411470337-NDVU/",
     team: {
       name: "Best Team",
@@ -99,6 +99,11 @@ const competitions: {
     title: "WordPress Plugin Hackathon",
     desc: "Contributed to programmatic plugin feature development.",
     link: "https://www.linkedin.com/in/adeel-atta/details/certifications/1724527785101/single-media-viewer/?profileId=ACoAADEzf0IBN3mJCSm42DzvYL8IlPhLNTOqo1k",
+  },
+  {
+    title: "Microsoft Agents League Hackathon (Nexboard)",
+    desc: "Developed an AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive simulation and marketing/email simulations for sales teams.",
+    link: "https://github.com/SoomroBilal/Nexboard",
   },
 ]
 
