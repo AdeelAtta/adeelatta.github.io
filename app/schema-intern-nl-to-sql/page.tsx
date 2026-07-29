@@ -124,10 +124,22 @@ export default function SchemaInternPage() {
         <div className="mx-auto max-w-[1280px] px-8 py-[120px]">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="mx-auto max-w-xl text-center lg:text-left">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.5px]" style={{ backgroundColor: "var(--clr-yellow)", color: "var(--clr-ink)" }}>
+              <div className="mb-4 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
+                <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.5px]" style={{ backgroundColor: "var(--clr-yellow)", color: "var(--clr-ink)" }}>
                 <Zap className="size-3.5" />
                 DB-Aware NL to SQL
-              </div>
+              </span>
+              <a
+                href="https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-ii"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.5px] transition-opacity hover:opacity-80"
+                style={{ backgroundColor: "var(--clr-blue)", color: "#fff" }}
+              >
+                AMD Hackathon
+                <ArrowRight className="size-3" />
+              </a>
+            </div>
               <h1 className="text-[40px] font-medium leading-[1.05] tracking-[-2px] md:text-[60px] lg:text-[80px]" style={{ color: "var(--clr-ink)" }}>
                 Ask in English.<br />
                 Get <span style={{ color: "var(--clr-blue)" }}>SQL</span> Instantly.

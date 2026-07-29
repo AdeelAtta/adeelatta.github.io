@@ -9,9 +9,9 @@ const competitions: {
   team?: { name: string; members: TeamMember[] }
 }[] = [
   {
-    title: "Schema-Aware AI-Powered Data Mapping Module (AMD Hackathon)",
+    title: "SchemaIntern – DB-Aware NL to SQL (AMD Hackathon)",
     desc: "Built an NL-to-SQL module with an interactive frontend enabling natural language querying across schemas, automatic SQL generation, and cross-schema data integration.",
-    link: "https://github.com/AdeelAtta/nl_2_analytics",
+    link: "https://adeelatta.dev/schema-intern-nl-to-sql",
     team: {
       name: "Team",
       members: [
