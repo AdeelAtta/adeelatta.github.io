@@ -4,11 +4,18 @@ import PrivacyPolicy from "@/components/privacy-policy";
 export const metadata: Metadata = {
   title: "Privacy Policy - Adeel Atta",
   description: "Privacy policy for Adeel Atta's portfolio website.",
+  alternates: { canonical: "https://adeelatta.dev/privacy-policy" },
   openGraph: {
     title: "Privacy Policy - Adeel Atta",
     description: "Privacy policy for Adeel Atta's portfolio website.",
     url: "https://adeelatta.dev/privacy-policy",
     images: [{ url: "https://adeelatta.dev/images/design-mode/profile.webp", width: 400, height: 400, alt: "Adeel Atta profile photo" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy - Adeel Atta",
+    description: "Privacy policy for Adeel Atta's portfolio website.",
+    images: ["https://adeelatta.dev/images/design-mode/profile.webp"],
   },
 }
 

@@ -11,7 +11,7 @@ export function ProfileCardWidget() {
       </div>
       <div className="text-center">
         <h2 className="text-lg font-bold text-text-primary font-sans tracking-tight">Adeel Atta</h2>
-        <p className="text-xs text-accent font-medium font-sans mt-0.5">Software Engineer</p>
+        <p className="text-xs text-accent font-medium font-sans mt-0.5">Frontend Engineer · Architecture → Deployment</p>
       </div>
       <div className="flex min-[680px]:flex-col justify-between">
         <div className="space-y-2.5 text-xs">

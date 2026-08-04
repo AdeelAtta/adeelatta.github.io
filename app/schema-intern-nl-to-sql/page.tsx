@@ -20,9 +20,11 @@ export const metadata: Metadata = {
     siteName: "SchemaIntern by Adeel Atta",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://adeelatta.dev/images/design-mode/profile.webp", width: 400, height: 400, alt: "Adeel Atta profile photo" }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["https://adeelatta.dev/images/design-mode/profile.webp"],
     title: "SchemaIntern – DB-Aware NL to SQL",
     description: "Connect your database and ask questions in plain English. SchemaIntern generates accurate, safe SQL.",
   },

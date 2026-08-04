@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import {
   ArrowRight,
   CheckCircle,
-  ChevronRight,
   Clock,
   Globe,
   List,
@@ -116,13 +115,6 @@ const changelog = [
   { version: "1.0.0", date: "July 29, 2026", changes: ["Initial release", "Support for XML upload, sitemap URL, and paste input", "Automated URL submission with retry logic", "Live progress tracking with status indicators", "Session history with search and filters", "Customizable delay and retry settings", "Desktop notifications on completion"] },
 ]
 
-const blogArticles = [
-  { title: "How to Get Your Website Indexed in Brave Search Faster", slug: "brave-search-indexing-guide", excerpt: "Learn how to speed up Brave Search indexing for your website. Best practices for sitemap submission, URL structure, and content optimization." },
-  { title: "Brave Search vs Google: What SEOs Need to Know in 2026", slug: "brave-search-vs-google-seo", excerpt: "A comprehensive comparison of Brave Search and Google for SEO professionals. Ranking factors, indexation differences, and optimization strategies." },
-  { title: "The Complete Guide to XML Sitemaps for Modern Search Engines", slug: "xml-sitemap-guide-2026", excerpt: "Everything you need to know about XML sitemaps in 2026. How to create, validate, and submit sitemaps to Brave Search, Google, and more." },
-  { title: "Why Brave Search Matters for Privacy-Focused SEO", slug: "brave-search-privacy-seo", excerpt: "How Brave Search's privacy-first approach changes the SEO landscape and why you should optimize for it now." },
-]
-
 export default function IndexFlowPage() {
   return (
     <div className="idx" style={{ fontFamily: "Inter, system-ui, -apple-system, sans-serif" }}>
@@ -169,9 +161,40 @@ export default function IndexFlowPage() {
         .idx .card-hover:hover { box-shadow: rgba(0, 30, 43, 0.08) 0px 4px 12px 0px; }
         .idx .link-muted { color: var(--clr-on-dark-muted); }
         .idx .link-muted:hover { color: var(--clr-on-dark); }
-        .idx .blog-card h3 { color: var(--clr-ink); }
-        .idx .blog-card:hover h3 { color: var(--clr-green-dark); }
       `}</style>
+
+      {/* ─── Structured Data ─── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "IndexFlow – Brave Search Indexer",
+            applicationCategory: "BrowserApplication",
+            operatingSystem: "Chrome",
+            url: "https://adeelatta.dev/indexflow",
+            description:
+              "Chrome extension that automates bulk URL submission to Brave Search. Upload XML sitemaps, fetch sitemap URLs, or paste links.",
+            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+            author: { "@type": "Person", name: "Adeel Atta", url: "https://adeelatta.dev" },
+          }),
+        }}
+      />
 
       {/* ─── Hero ─── */}
       <section style={{ backgroundColor: "var(--clr-teal-deep)" }} className="overflow-hidden">
@@ -298,7 +321,7 @@ export default function IndexFlowPage() {
       </section>
 
       {/* ─── How It Works ─── */}
-      <section className="py-24 md:py-28">
+      <section id="how-it-works" className="py-24 md:py-28">
         <div className="mx-auto max-w-7xl px-8">
           <div className="mx-auto max-w-2xl text-center">
             <p className="mb-4  text-[11px] font-semibold uppercase tracking-[1px]" style={{ color: "var(--clr-steel)" }}>
@@ -460,43 +483,6 @@ export default function IndexFlowPage() {
                   ))}
                 </ul>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── Blog ─── */}
-      <section style={{ backgroundColor: "var(--clr-surface-soft)" }} className="py-24 md:py-28">
-        <div className="mx-auto max-w-7xl px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="mb-4  text-[11px] font-semibold uppercase tracking-[1px]" style={{ color: "var(--clr-steel)" }}>
-              Blog
-            </p>
-            <h2 className="text-3xl font-medium leading-tight tracking-[-0.5px] md:text-4xl lg:text-[36px]" style={{ color: "var(--clr-ink)" }}>
-              SEO & Indexing Resources
-            </h2>
-            <p className="mt-4  text-base leading-[1.55]" style={{ color: "var(--clr-slate)" }}>
-              Articles and guides to improve your search engine visibility.
-            </p>
-          </div>
-          <div className="mt-14 grid gap-6 md:grid-cols-2">
-            {blogArticles.map((article) => (
-              <a
-                key={article.slug}
-                href={`/blog/${article.slug}`}
-                className="blog-card group rounded-lg border p-8 transition-shadow"
-                style={{ backgroundColor: "var(--clr-canvas)", borderColor: "var(--clr-hairline)" }}
-              >
-                <h3 className="text-lg font-semibold leading-[1.40] transition-colors">
-                  {article.title}
-                </h3>
-                <p className="mt-2  text-sm leading-normal" style={{ color: "var(--clr-slate)" }}>
-                  {article.excerpt}
-                </p>
-                <span className="mt-3 inline-flex items-center gap-1  text-sm font-medium leading-normal" style={{ color: "var(--clr-green-dark)" }}>
-                  Read more <ChevronRight className="size-3.5" />
-                </span>
-              </a>
             ))}
           </div>
         </div>

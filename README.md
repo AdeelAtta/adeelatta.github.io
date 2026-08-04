@@ -12,7 +12,7 @@
 
 ## About
 
-A curious engineer who explores across domains - from blockchain and full-stack development to AI/ML and education. Continuously learning, adapting quickly, and working at the intersection of different fields.
+Frontend engineer who architects, builds, and ships fast, accessible web products — design systems, performance, testing, and CI/CD — powered by backend and AI knowledge. Hackathon winner, educator, and lifelong learner.
 
 ---
 

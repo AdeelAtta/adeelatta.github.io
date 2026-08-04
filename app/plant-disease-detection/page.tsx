@@ -20,9 +20,11 @@ export const metadata: Metadata = {
     siteName: "Projects by Adeel Atta",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://adeelatta.dev/images/design-mode/profile.webp", width: 400, height: 400, alt: "Adeel Atta profile photo" }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["https://adeelatta.dev/images/design-mode/profile.webp"],
     title: "Plant Disease Detection & Classification",
     description: "Deep learning computer vision architectures using PyTorch for automated plant disease identification.",
   },

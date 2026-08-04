@@ -1,5 +1,5 @@
 # Adeel Atta
-## Software Engineer | Educator | Hackathon Enthusiast
+## Frontend Engineer | Architecture · Design Systems · CI/CD | Educator | Hackathon Enthusiast
 
 - Website: https://adeelatta.dev
 - Email: adeelatta2000@gmail.com
@@ -23,6 +23,6 @@
 - VR Shooting Gallery – Meta Quest 3: https://adeelatta.dev/gun-shooting
 
 ### Key Topics
-- Software Engineering, AI/ML, Blockchain, Full-Stack Development
+- Frontend Engineering (React, Next.js), Software Engineering, AI/ML, Blockchain
 - Teaching, Mentoring, STEM Education
 - Hackathons: Meta Hacker Cup, Harvard CS50 Puzzle Day, Geekle AI Hackathon (1st Place), LLM Hackathons

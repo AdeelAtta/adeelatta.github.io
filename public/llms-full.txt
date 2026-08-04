@@ -2,40 +2,43 @@
 
 ## Personal Information
 - **Name:** Adeel Atta
-- **Title:** Software Engineer
+- **Title:** Frontend Engineer — Architecting & Shipping Web Experiences (React & Next.js, design systems, performance, testing, CI/CD) with Backend & AI Knowledge
 - **Email:** adeelatta2000@gmail.com
 - **Phone:** +92-303-2727095
 - **Location:** Sindh, Pakistan
 - **Website:** https://adeelatta.dev
 - **LinkedIn:** https://www.linkedin.com/in/adeel-atta/
 - **GitHub:** https://github.com/AdeelAtta
-- **Portfolio:** https://adeelatta.dev
 
 ## Education
-**BSE in Software Engineering** - University of Sindh (Jan 2020 – May 2024)
+**B.S. Software Engineering** - University of Sindh, Jamshoro (Jan 2020 - May 2024)
 - CGPA: 3.71 / 4.00
-- Coursework: Software Engineering, Data Science, Machine Learning, Computer Networks, Information Security, Web Engineering, Mobile App Development, Data Warehousing, Software Quality Assurance, Design & Analysis of Algorithms
+- Gold Medal - Ranked 1st out of 1,500+ students in the Faculty of Engineering and Technology
+- Silver Medal - Ranked 1st in the Software Engineering Department
+- Coursework: Data Science, Computer Communication & Networks, Pervasive Computing, Operating Systems, Microprocessor & Assembly Language, Digital Logic Design, Data Structures & Algorithms, Linear Algebra, Probability & Statistics, Calculus
 
 ## Awards & Honors
-- **Gold Medal** - Awarded for securing 1st position in Software Engineering at the University of Sindh
-- **Silver Medal** - Awarded for securing 2nd position in the Faculty of Engineering and Technology at the University of Sindh
-- **Prime Minister Laptop Award** - Recipient of the Prime Minister Laptop Award during undergraduate studies
+- **Gold Medal** - Ranked 1st out of 1,500+ students in the Faculty of Engineering and Technology, University of Sindh
+- **Silver Medal** - Ranked 1st in the Software Engineering Department, University of Sindh
+- **Prime Minister Laptop Award** - Recipient during undergraduate studies
 
 ## International Competitions & Hackathons
-1. **Geekle AI Hackathon** (Team FR1) - 9 members - link
-2. **Meta Hacker Cup 2024** - Ranked 6,752 out of 30,000+ global participants
-3. **Harvard CS50 Puzzle Day** (Team CS50 Puzzle Squad) - 4 members
-4. **Visionary Award - LLM Hackathon (Materials Science)** (Team Best Team) - 10 members - Built a RAG-powered system for extracting structured data from scientific papers
-5. **Llama 3 Hackathon** (Team Fastian) - 4 members - Built an LLM-as-a-judge chat evaluation tool using the Llama 3 model
-6. **Pak-Angels Gen AI Hackathon** (Team Smart Solution) - 5 members - Developed AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER data and GPT-4
+1. **Geekle AI Hackathon** (Team FR1) - 1st Place, $2,000 prize. Built a Text-to-Diagram module for generating structured architecture diagrams using AI. Page: https://adeelatta.dev/geekle-ai-hackathon
+2. **Microsoft Agents League Hackathon (Nexboard)** - AI-powered multi-tenant SaaS platform for employee onboarding with agent and sales simulations. Page: https://adeelatta.dev/nexboard
+3. **AMD Developer Hackathon (SchemaIntern)** - Schema-aware natural language to SQL with automatic SQL generation and cross-schema data integration. Page: https://adeelatta.dev/schema-intern-nl-to-sql
+4. **Pak-Angels Gen AI Hackathon** (Team Smart Solution) - AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER data and GPT-4. Page: https://adeelatta.dev/pak-angels-hackathon
+5. **Personify Chat Assistant (Llama 3 Hackathon)** (Team Fastian) - LLM-as-a-judge chat evaluation tool, shipped as an AI messaging assistant for WhatsApp Web and LinkedIn. Page: https://adeelatta.dev/personify-chat-assistant
+6. **Visionary Award - LLM Hackathon (Materials Science & Chemistry)** (Team Best Team) - Built Forja de Matéria AI, an LLM/RAG platform for structured automated data extraction
+7. **Meta Hacker Cup 2024** - Ranked 6,752 out of 30,000+ global participants, 56th in Pakistan
+8. **Harvard CS50 Puzzle Day** (Team CS50 Puzzle Squad) - Global puzzle-solving competition
 
 ## Teaching & Mentoring
-- **Stanford Code in Place** - Section Leader (Apr 2026 – present)
-- **ICodeGuru** - Moderator & Trainer (May 2023 – present)
+- **Stanford Code in Place** - Section Leader (Apr 2026 - present). Led a section of students through Stanford's CS106A introductory programming course
+- **ICodeGuru** - Moderator & Trainer (Feb 2026 - present). Mentored students in Data Structures & Algorithms with live online sessions
 
 ## Professional Experience
-- **React.js Developer** at TABS Technology (Sep 2024 – Jan 2025) - Built and maintained 6+ web applications using React, TypeScript, and Node.js
-- **AI Chatbot Developer** at Cents的事件 (Remote, Pakistan) (Jul 2022 – Nov 2022) - Configured workflow automation and integrated LLMs for customer service
+- **Frontend Engineer** at Mentalyc (Apr 2025 - Mar 2026) - React & TypeScript frontends integrated with RESTful APIs serving 30,000+ users. Unit, integration, and E2E tests (JEST, Playwright, BDD/Cucumber), code reviews, and technical documentation
+- **Frontend Developer** at Analog Mutations (Feb 2023 - Apr 2025) - React user interfaces and RESTful API integrations for high-concurrency services. Git workflows, CI/CD pipelines, frontend architecture
 
 ## Technical Skills
 - **AI & Machine Learning:** Python (Pandas, NumPy), PyTorch, Scikit-learn, HuggingFace, RAG, LLM Engineering, ML Model Training, Deep Learning
@@ -43,17 +46,19 @@
 - **Blockchain & Web3:** Cosmos SDK, Solana, Web3.js, Ethers.js, WalletConnect, MetaMask, EVM, Staking Platforms
 
 ## Projects
-- **Personify AI** - AI chat assistant Chrome extension - https://chromewebstore.google.com/detail/personify-ai-chat-assista/dfokiabcgalihnedbbjbkdfhjeokdpne
-- **EthicalNode Platform** - Maintained distributed staking network for 900+ edge nodes with $1M+ on-chain capital - https://ethicalnode.com
-- **Ethical Wallet** - Chrome extension wallet for secure browser-based blockchain transactions - https://chromewebstore.google.com/detail/ethical-wallet/nfaepmamdapehcbedhejbjcpnlcldodi
+- **VR Shooting Gallery - Meta Quest 3** - Carnival-style VR shooting range. https://adeelatta.dev/gun-shooting
+- **IndexFlow - Brave Search Indexer** - Chrome extension for bulk URL submission to Brave Search. https://adeelatta.dev/indexflow
+- **SchemaIntern - DB-Aware NL to SQL** - Natural language to SQL with automatic schema discovery. https://adeelatta.dev/schema-intern-nl-to-sql
+- **Nexboard** - AI onboarding and sales simulation platform for the Microsoft Agents League Hackathon. https://adeelatta.dev/nexboard
+- **Personify Chat Assistant** - AI messaging suggestions for WhatsApp Web and LinkedIn. https://adeelatta.dev/personify-chat-assistant
+- **Mentalyc Web App & Chrome Extension** - AI mental health platform serving 30,000+ active subscribers
+- **EthicalNode Platform** - Distributed staking network serving 900+ edge nodes with $1M+ on-chain capital
+- **Ethical Wallet** - Chrome extension wallet for browser-based blockchain transactions. https://chromewebstore.google.com/detail/ethical-wallet/nfaepmamdapehcbedhejbjcpnlcldodi
 - **Decentr.ai** - MERN-stack multi-model AI aggregation hub & API gateway
-- **Environmental & Urban Metrics Modeling Tool** - Analytical pipeline for NASA POWER meteorological data - https://urban-ai.streamlit.app/
-- **P2P File Sharing with Blockchain** - Decentralized file sharing using WebRTC, IPFS, and Ethereum smart contracts - https://p2pblockshare.vercel.app/
-- **YouTube Comment Analyzer** - ML-powered toxicity and spam detection with Streamlit - https://ytcommentanalyzer.streamlit.app/
-- **E-Learning Platform with AI** - AI-powered educational platform with content recommendations
+- **Environmental & Urban Metrics Modeling Tool** - Analytical pipeline for NASA POWER meteorological data. https://urban-ai.streamlit.app/
+- **Plant Disease Detection & Classification** - PyTorch deep learning for automated plant disease identification. https://adeelatta.dev/plant-disease-detection
 
 ## Site Structure
-Single-page application with 3 tabs:
-1. **Introduction** - Bio, Education, Awards & Honors, International Competitions & Hackathons
-2. **Teaching & Mentor** - Teaching positions and mentoring experience
-3. **Experience** - Professional Experience, Technical Skills, Projects
+Portfolio dashboard with widget sections:
+- Profile Card, Bio, Education, Awards & Honors, Competitions & Hackathons, Professional Experience, Technical Skills, Projects, Stats, Volunteer Experience
+- Each project has a dedicated page: https://adeelatta.dev/<project-slug>

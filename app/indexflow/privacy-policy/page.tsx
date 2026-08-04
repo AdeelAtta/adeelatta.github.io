@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     siteName: "IndexFlow by Adeel Atta",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://adeelatta.dev/indexflow/promo.png", width: 1200, height: 630, alt: "IndexFlow – Brave Search Indexer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy – IndexFlow for Brave Search",
+    description: "IndexFlow does not collect, store, or share any personal data. Everything runs in your browser.",
+    images: ["https://adeelatta.dev/indexflow/promo.png"],
   },
 }
 

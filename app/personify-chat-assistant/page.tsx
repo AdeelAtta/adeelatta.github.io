@@ -20,9 +20,11 @@ export const metadata: Metadata = {
     siteName: "Projects by Adeel Atta",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://adeelatta.dev/images/design-mode/profile.webp", width: 400, height: 400, alt: "Adeel Atta profile photo" }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["https://adeelatta.dev/images/design-mode/profile.webp"],
     title: "Personify Chat Assistant",
     description: "AI-powered real-time messaging suggestions across WhatsApp Web and LinkedIn. Built with Llama 3.",
   },
@@ -62,6 +64,25 @@ export default function PersonifyPage() {
         .pf .btn-secondary { background-color: transparent; color: var(--clr-ink); border: 1px solid var(--clr-hairline); border-radius: 8px; font-weight: 500; }
         .pf .card { background-color: var(--clr-card); border: 1px solid var(--clr-hairline); border-radius: 16px; }
       `}</style>
+
+      {/* ─── Structured Data ─── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "Personify Chat Assistant",
+            applicationCategory: "BrowserApplication",
+            operatingSystem: "Chrome",
+            url: "https://adeelatta.dev/personify-chat-assistant",
+            description:
+              "AI-powered real-time messaging suggestions across WhatsApp Web and LinkedIn. Chrome extension built with Llama 3.",
+            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+            author: { "@type": "Person", name: "Adeel Atta", url: "https://adeelatta.dev" },
+          }),
+        }}
+      />
 
       {/* ─── Hero ─── */}
       <section className="relative overflow-hidden" style={{ background: "linear-gradient(135deg, var(--clr-primary-soft) 0%, #ede9fe 50%, var(--clr-primary-soft) 100%)" }}>

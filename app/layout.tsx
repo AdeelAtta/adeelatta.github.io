@@ -17,9 +17,9 @@ const sourceSerif = Source_Serif_4({
 })
 
 export const metadata: Metadata = {
-  title: "Adeel Atta | Software Engineer (Full-Stack & AI) | Building AI Systems",
+  title: "Adeel Atta — Frontend Engineer | Architecting & Shipping Web Experiences",
   description:
-    "Software engineer (Full-Stack & AI) and hackathon competitor. portfolio showcasing projects, teaching, awards, and professional experience.",
+    "Frontend engineer who architects, builds, and ships fast, accessible web products — design systems, performance, testing, and CI/CD — powered by backend and AI knowledge. Hackathon winner and educator.",
   metadataBase: new URL("https://adeelatta.dev"),
   authors: [{ name: "Adeel Atta" }],
   keywords: [
@@ -68,7 +68,9 @@ export const metadata: Metadata = {
     "AI engineer",
     "Web3 developer",
     "hackathon winner",
-    "full-stack developer",
+    "frontend engineer",
+    "React engineer",
+    "Next.js engineer",
     "academic portfolio",
     "software engineer portfolio",
   ],
@@ -76,13 +78,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://adeelatta.dev" },
   twitter: {
     card: "summary_large_image",
-    title: "Adeel Atta | Software Engineer | University of Sindh",
-    description: "Software engineer, educator, and hackathon competitor. Academic portfolio showcasing projects, teaching, awards, and professional experience.",
+    title: "Adeel Atta — Frontend Engineer | Architecting & Shipping Web Experiences",
+    description: "Frontend engineer architecting, building, and shipping React & Next.js products — design systems, performance, testing, CI/CD — with backend and AI knowledge.",
     images: ["https://adeelatta.dev/images/design-mode/profile.webp"],
   },
   openGraph: {
-    title: "Adeel Atta | Academic Portfolio",
-    description: "Software engineer, educator, and hackathon competitor. Building intelligent systems with AI and modern engineering.",
+    title: "Adeel Atta — Frontend Engineer | Architecting & Shipping Web Experiences",
+    description: "Frontend engineer architecting, building, and shipping React & Next.js products — design systems, performance, testing, CI/CD — with backend and AI knowledge.",
     url: "https://adeelatta.dev",
     siteName: "Adeel Atta",
     locale: "en_US",
@@ -92,22 +94,51 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Adeel Atta",
-    jobTitle: "Software Engineer",
-    url: "https://adeelatta.dev",
-    email: "adeelatta2000@gmail.com",
-    telephone: "+92-303-2727095",
-    image: "https://adeelatta.dev/images/design-mode/profile.webp",
-    alumniOf: "University of Sindh",
-    sameAs: [
-      "https://www.linkedin.com/in/adeel-atta/",
-      "https://github.com/AdeelAtta",
-      "https://adeelatta.dev",
-    ],
-  }
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Adeel Atta",
+      jobTitle: "Frontend Engineer",
+      url: "https://adeelatta.dev",
+      email: "adeelatta2000@gmail.com",
+      telephone: "+92-303-2727095",
+      image: "https://adeelatta.dev/images/design-mode/profile.webp",
+      alumniOf: "University of Sindh",
+      knowsAbout: ["React", "Next.js", "TypeScript", "Python", "AI/ML", "LLM Engineering", "RAG", "Blockchain"],
+      sameAs: [
+        "https://www.linkedin.com/in/adeel-atta/",
+        "https://github.com/AdeelAtta",
+        "https://adeelatta.dev",
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Adeel Atta — Frontend Engineer (React & Next.js)",
+      url: "https://adeelatta.dev",
+      description:
+        "Portfolio of Adeel Atta — frontend engineer architecting and shipping fast, beautiful web experiences with backend and AI knowledge. Projects, teaching, awards, and professional experience.",
+      inLanguage: "en-US",
+      publisher: {
+        "@type": "Person",
+        name: "Adeel Atta",
+        url: "https://adeelatta.dev",
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Adeel Atta",
+      url: "https://adeelatta.dev",
+      email: "adeelatta2000@gmail.com",
+      logo: "https://adeelatta.dev/images/design-mode/profile.webp",
+      sameAs: [
+        "https://www.linkedin.com/in/adeel-atta/",
+        "https://github.com/AdeelAtta",
+      ],
+    },
+  ]
 
   return (
     <html lang="en" className={`${onest.variable} ${sourceSerif.variable}`} suppressHydrationWarning>
@@ -115,10 +146,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{
           __html: `(function(){try{var t=localStorage.getItem("adeel-theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme:dark)").matches))document.documentElement.classList.add("dark")}catch(e){}})()`
         }} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        {jsonLd.map((ld, i) => (
+          <script
+            key={i}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }}
+          />
+        ))}
       </head>
       <body className="min-h-screen bg-bg-primary text-text-primary font-serif antialiased">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-accent focus:text-white focus:rounded-md focus:outline-none">

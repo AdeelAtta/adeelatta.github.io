@@ -21,9 +21,11 @@ export const metadata: Metadata = {
     siteName: "Projects by Adeel Atta",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://adeelatta.dev/images/design-mode/profile.webp", width: 400, height: 400, alt: "Adeel Atta profile photo" }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["https://adeelatta.dev/images/design-mode/profile.webp"],
     title: "Geekle AI Hackathon — 1st Place",
     description: "Text-to-Diagram: structured architecture diagrams generated from natural language with AI. Won 1st place and $2,000 at the Geekle AI Hackathon.",
   },

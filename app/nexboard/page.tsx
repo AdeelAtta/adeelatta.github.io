@@ -4,7 +4,7 @@ import { ArrowRight, Award, Bot, Building2, Globe, Rocket, Users, Zap, BadgeChec
 export const metadata: Metadata = {
   title: "Nexboard – AI-Powered Onboarding & Sales Simulation Platform | Microsoft Agents League",
   description:
-    "AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive agent simulations and marketing/email simulations for sales teams. Built for the Microsoft Agents League Hackathon.",
+    "AI-powered multi-tenant SaaS platform for employee onboarding with interactive agent simulations and marketing/email simulations for sales teams. Built for the Microsoft Agents League Hackathon.",
   metadataBase: new URL("https://adeelatta.dev"),
   authors: [{ name: "Adeel Atta" }],
   keywords: [
@@ -21,9 +21,11 @@ export const metadata: Metadata = {
     siteName: "Projects by Adeel Atta",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://adeelatta.dev/images/design-mode/profile.webp", width: 400, height: 400, alt: "Adeel Atta profile photo" }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["https://adeelatta.dev/images/design-mode/profile.webp"],
     title: "Nexboard – AI-Powered Onboarding & Sales Simulation Platform",
     description: "AI-powered multi-tenant SaaS platform for employee onboarding with interactive agent and sales simulations.",
   },
