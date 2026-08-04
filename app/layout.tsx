@@ -105,6 +105,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       telephone: "+92-303-2727095",
       image: "https://adeelatta.dev/images/design-mode/profile.webp",
       alumniOf: "University of Sindh",
+      award: [
+        "Gold Medal - Ranked 1st in the Faculty of Engineering and Technology, University of Sindh",
+        "Silver Medal - Ranked 1st in the Software Engineering Department, University of Sindh",
+        "Prime Minister Laptop Award",
+        "1st Place - Geekle AI Hackathon",
+      ],
+      knowsLanguage: ["English", "Urdu"],
       knowsAbout: ["React", "Next.js", "TypeScript", "Python", "AI/ML", "LLM Engineering", "RAG", "Blockchain"],
       sameAs: [
         "https://www.linkedin.com/in/adeel-atta/",

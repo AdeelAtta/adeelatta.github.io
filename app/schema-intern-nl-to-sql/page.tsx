@@ -122,6 +122,22 @@ export default function SchemaInternPage() {
         }
       `}</style>
 
+      {/* ─── Structured Data ─── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }),
+        }}
+      />
+
       {/* ─── Hero ─── */}
       <section className="overflow-hidden">
         <div className="mx-auto max-w-[1280px] px-8 py-[120px]">
