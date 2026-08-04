@@ -28,7 +28,6 @@
 4. **Visionary Award - LLM Hackathon (Materials Science)** (Team Best Team) - 10 members - Built a RAG-powered system for extracting structured data from scientific papers
 5. **Llama 3 Hackathon** (Team Fastian) - 4 members - Built an LLM-as-a-judge chat evaluation tool using the Llama 3 model
 6. **Pak-Angels Gen AI Hackathon** (Team Smart Solution) - 5 members - Developed AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER data and GPT-4
-7. **WordPress Plugin Hackathon** - Contributed to programmatic plugin feature development
 
 ## Teaching & Mentoring
 - **Stanford Code in Place** - Section Leader (Apr 2026 – present)

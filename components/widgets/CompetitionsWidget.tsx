@@ -119,11 +119,6 @@ const competitions: {
       ],
     },
   },
-  {
-    title: "WordPress Plugin Hackathon",
-    desc: "Contributed to programmatic plugin feature development.",
-    link: "https://www.linkedin.com/in/adeel-atta/details/certifications/1724527785101/single-media-viewer/?profileId=ACoAADEzf0IBN3mJCSm42DzvYL8IlPhLNTOqo1k",
-  },
 ]
 
 export function CompetitionsWidget() {
