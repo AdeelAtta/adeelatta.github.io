@@ -10,7 +10,7 @@ export function StatsWidget() {
       </div>
       <div className="flex flex-1 min-w-20  flex-col items-center">
         <FolderKanban className="w-4 h-4 text-accent" />
-        <p className="text-sm font-bold text-text-primary font-sans leading-none mt-1">7</p>
+        <p className="text-sm font-bold text-text-primary font-sans leading-none mt-1">10</p>
         <p className="text-[9px] text-text-muted font-sans mt-0.5 text-center leading-tight">Projects</p>
       </div>
       <div className="flex flex-1 min-w-20 flex-col items-center">
