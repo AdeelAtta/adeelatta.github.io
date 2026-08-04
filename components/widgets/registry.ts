@@ -9,7 +9,8 @@ import { SkillsWidget } from "./SkillsWidget"
 import { ProjectsWidget } from "./ProjectsWidget"
 import { ProfileCardWidget } from "./ProfileCardWidget"
 import { StatsWidget } from "./StatsWidget"
-import { User, GraduationCap, Award, Trophy, BookOpen, Briefcase, Wrench, FolderKanban, UserCircle, BarChart3 } from "lucide-react"
+import { FAQWidget } from "./FAQWidget"
+import { User, GraduationCap, Award, Trophy, BookOpen, Briefcase, Wrench, FolderKanban, UserCircle, BarChart3, HelpCircle } from "lucide-react"
 
 export type WidgetId =
   | "profile-card"
@@ -22,6 +23,7 @@ export type WidgetId =
   | "skills"
   | "projects"
   | "stats"
+  | "faq"
 
 export type WidgetDefinition = {
   id: WidgetId
@@ -43,6 +45,7 @@ export const widgetDefinitions: WidgetDefinition[] = [
   { id: "competitions", title: "Competitions & Hackathons", icon: Trophy, component: CompetitionsWidget, defaultSize: { w: 12, h: 19 }, minSize: { w: 6, h: 4 } },
   { id: "projects", title: "Projects", icon: FolderKanban, component: ProjectsWidget, defaultSize: { w: 12, h: 12 }, minSize: { w: 6, h: 4 } },
   { id: "skills", title: "Technical Skills", icon: Wrench, component: SkillsWidget, defaultSize: { w: 12, h: 5 }, minSize: { w: 6, h: 5 } },
+  { id: "faq", title: "FAQ", icon: HelpCircle, component: FAQWidget, defaultSize: { w: 12, h: 5 }, minSize: { w: 6, h: 3 } },
 ]
 
 export const widgetMap = Object.fromEntries(
@@ -65,6 +68,7 @@ export function getDefaultLayout() {
     { i: "stats",        x: 12, y: 7,  w: 3,  h: 3,  minW: 1, minH: 1 },
     { i: "experience",   x: 12, y: 10, w: 12, h: 8,  minW: 6, minH: 3 },
     { i: "projects",     x: 12, y: 26, w: 12, h: 12, minW: 6, minH: 4 },
+    { i: "faq",          x: 0,  y: 26, w: 12, h: 5,  minW: 6, minH: 3 },
   ]
 }
 
@@ -79,6 +83,7 @@ function mdLayout() {
     { i: "teaching",     x: 6,  y: 11, w: 6,  h: 5,  minW: 4, minH: 4 },
     { i: "competitions", x: 0,  y: 15, w: 6,  h: 19, minW: 6, minH: 4 },
     { i: "projects",     x: 6,  y: 34, w: 6,  h: 12, minW: 6, minH: 4 },
+    { i: "faq",          x: 0,  y: 46, w: 12, h: 5,  minW: 6, minH: 3 },
   ]
 }
 
@@ -93,6 +98,7 @@ function smLayout() {
     { i: "stats",        x: 3, y: 39, w: 3, h: 3,  minW: 1, minH: 1 },
     { i: "experience",   x: 0, y: 42, w: 6, h: 5,  minW: 6, minH: 3 },
     { i: "projects",     x: 0, y: 47, w: 6, h: 12, minW: 6, minH: 4 },
+    { i: "faq",          x: 0, y: 59, w: 6, h: 5,  minW: 6, minH: 3 },
   ]
 }
 

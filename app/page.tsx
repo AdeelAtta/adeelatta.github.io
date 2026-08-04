@@ -6,9 +6,10 @@ import "react-grid-layout/css/styles.css"
 
 import { WidgetDrawer } from "@/components/widgets/WidgetDrawer"
 import { widgetMap, getDefaultLayouts, breakpoints, cols, allWidgetIds, type WidgetId } from "@/components/widgets/registry"
+import { faqItems } from "@/components/widgets/FAQWidget"
 import { LayoutGrid, RotateCcw, Pencil, Lock, Sun, Moon } from "lucide-react"
 
-const STORAGE_KEY = "adeel-dashboard-data-v0.2"
+const STORAGE_KEY = "adeel-dashboard-data-v0.3"
 
 function loadFromStorage() {
   try {
@@ -117,6 +118,20 @@ export default function Home() {
 
   return (
     <main id="main-content" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqItems.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }),
+        }}
+      />
       {/* Top Navigation Bar */}
       <nav className="flex items-center justify-between gap-4 mb-10 bg-bg-card border border-border-light px-5 py-3 w-full shadow-sm rounded-lg">
         <div className="flex items-center gap-3 shrink-0">
