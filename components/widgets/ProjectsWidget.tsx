@@ -1,10 +1,10 @@
 import { ExternalLink } from "lucide-react"
 
 const projects = [
-  { title: "VR Shooting Gallery – Meta Quest 3", desc: "Carnival-style VR shooting range built for Meta Quest 3. Shoot moving targets, build combos, and unlock guns and skins across five themed ranges.", link: "/gun-shooting" },
   { title: "Mentalyc Web App", desc: "Designed and implemented a modular design system for an AI mental health platform serving 30,000+ active subscribers.", link: "https://app.mentalyc.com" },
   { title: "Mentalyc Chrome Extension", desc: "Developed frontend design system with API and web integrations for auto notes transfer to different EHR systems.", link: "https://chromewebstore.google.com/detail/mentalyc/jhlkppjeaacmnbpdmlflkknfjfjkpfgj" },
   { title: "Ethical Wallet", desc: "Built a Chrome extension wallet enabling secure browser-based blockchain transactions.", link: "https://chromewebstore.google.com/detail/ethical-wallet/nfaepmamdapehcbedhejbjcpnlcldodi" },
+  { title: "VR Shooting Gallery – Meta Quest 3", desc: "Carnival-style VR shooting range built for Meta Quest 3. Shoot moving targets, build combos, and unlock guns and skins across five themed ranges.", link: "/gun-shooting" },
   { title: "Personify Chat Assistant", desc: "Chrome extension providing AI-powered real-time messaging suggestions across WhatsApp Web and LinkedIn.", link: "/personify-chat-assistant" },
   { title: "Decentr.ai", desc: "MERN-stack platform consolidating multi-vendor AI access under a decentralized wallet subscription gateway." },
   { title: "Pak-Angels Gen AI Hackathon – Urban AI Tool", desc: "AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER meteorological data and GPT-4. Built for Pak-Angels Gen AI Hackathon.", link: "/pak-angels-hackathon" },
