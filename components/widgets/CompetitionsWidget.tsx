@@ -107,7 +107,7 @@ const competitions: {
   {
     title: "Pak-Angels Gen AI Hackathon",
     desc: "Developed AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER data and GPT-4.",
-    link: "https://www.linkedin.com/posts/dr-rabia-chishti-217647148_hackathon-teamsuccess-urbanplanning-activity-7237405101319958528-fYTL/",
+    link: "/pak-angels-hackathon",
     team: {
       name: "Smart Solution",
       members: [
