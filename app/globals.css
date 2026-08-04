@@ -135,6 +135,41 @@
   animation: accordion-up 0.2s ease-out;
 }
 
+@property --neon-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes neon-run {
+  to { --neon-angle: 360deg; }
+}
+
+.neon-border {
+  background: transparent;
+  transition: background 0.25s ease;
+}
+
+.neon-border:hover {
+  background: conic-gradient(
+    from var(--neon-angle),
+    transparent 0deg,
+    transparent 80deg,
+    #ffd76e 110deg,
+    #ffb84d 130deg,
+    transparent 160deg,
+    transparent 320deg,
+    #ffd76e 342deg,
+    #ffb84d 352deg,
+    transparent 360deg
+  );
+  animation: neon-run 3s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neon-border:hover { animation: none; }
+}
+
 @layer utilities {
   .tag {
     @apply inline-flex items-center text-[11px] font-medium;

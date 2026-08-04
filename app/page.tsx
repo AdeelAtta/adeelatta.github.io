@@ -203,11 +203,12 @@ export default function Home() {
               const WidgetComp = def.component
               const Icon = def.icon
               return (
-                <div key={id}
-                  className={`bg-bg-card overflow-hidden flex flex-col h-full transition-all duration-200 rounded-lg ${
-                    isEditing ? "shadow-lg ring-1 ring-border" : "shadow-md ring-1 ring-border-light"
-                  }`}
-                >
+                <div key={id} className="h-full rounded-lg p-[2.5px] neon-border">
+                  <div
+                    className={`bg-bg-card overflow-hidden flex flex-col h-full transition-all duration-200 rounded-lg ${
+                      isEditing ? "shadow-lg ring-1 ring-border" : "shadow-md ring-1 ring-border-light"
+                    }`}
+                  >
                   <div className={`flex items-center gap-2.5 px-5 py-3 border-b select-none transition-all duration-200 ${
                     isEditing
                       ? "drag-handle cursor-grab active:cursor-grabbing bg-bg-elevated border-border"
@@ -218,6 +219,7 @@ export default function Home() {
                     <span className="text-[10px] font-semibold text-text-secondary font-sans uppercase tracking-[0.12em]">{def.title}</span>
                   </div>
                   <div className="flex-1 overflow-y-auto"><WidgetComp /></div>
+                  </div>
                 </div>
               )
             })}
