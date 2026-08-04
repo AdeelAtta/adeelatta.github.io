@@ -8,11 +8,9 @@ const projects = [
   { title: "Personify Chat Assistant", desc: "Chrome extension providing AI-powered real-time messaging suggestions across WhatsApp Web and LinkedIn.", link: "/personify-chat-assistant" },
   { title: "Decentr.ai", desc: "MERN-stack platform consolidating multi-vendor AI access under a decentralized wallet subscription gateway." },
   { title: "Pak-Angels Gen AI Hackathon – Urban AI Tool", desc: "AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER meteorological data and GPT-4. Built for Pak-Angels Gen AI Hackathon.", link: "/pak-angels-hackathon" },
-  { title: "Plant Disease Detection & Classification", desc: "Deep learning computer vision architectures using PyTorch for automated plant disease identification.", link: "/plant-disease-detection" },
   { title: "IndexFlow – Brave Search Indexer", desc: "Chrome extension that automates bulk URL submission to Brave Search. Supports XML sitemaps, sitemap URLs, and manual paste input.", link: "/indexflow" },
   { title: "SchemaIntern – DB-Aware NL to SQL", desc: "Schema-aware natural language to SQL built for the AMD Developer Hackathon. Connect your database and ask questions in plain English. Generates accurate, safe SQL.", link: "/schema-intern-nl-to-sql" },
   { title: "Nexboard – Microsoft Agents League Hackathon", desc: "AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive agent simulations and marketing/email simulations for sales teams.", link: "/nexboard" },
-  { title: "Text-to-Diagram – Geekle AI Hackathon (1st Place)", desc: "AI module that generates structured architecture diagrams from natural language. Won 1st place and a $2,000 prize at the Geekle AI Hackathon.", link: "/geekle-ai-hackathon" },
 ]
 
 export function ProjectsWidget() {
