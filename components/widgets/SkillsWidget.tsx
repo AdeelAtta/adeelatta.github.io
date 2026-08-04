@@ -1,7 +1,7 @@
 const skillGroups = [
   { category: "AI & Machine Learning", items: ["Python (Pandas, NumPy)", "PyTorch", "Scikit-learn", "HuggingFace", "RAG", "LLM Engineering", "ML Model Training", "Deep Learning"] },
   { category: "Software Engineering", items: ["React", "Next.js", "TypeScript", "Node.js", "Express", "MongoDB", "PostgreSQL", "Git", "Docker", "JEST", "Playwright", "BDD / Cucumber"] },
-  { category: "Blockchain & Web3", items: ["Cosmos SDK", "Solana", "Web3.js", "Ethers.js", "WalletConnect", "MetaMask", "EVM", "Staking Platforms"] },
+  { category: "Blockchain & Web3", items: ["Cosmos SDK", "Web3.js", "Ethers.js", "WalletConnect", "MetaMask", "EVM", "Staking Platforms"] },
 ]
 
 export function SkillsWidget() {

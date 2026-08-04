@@ -44,7 +44,7 @@ export function ProfileCardWidget() {
             { label: "CGPA", value: "3.71 / 4.00" },
             { label: "Awards", value: "Gold + Silver Medal" },
             { label: "Hackathons", value: "8+ participated" },
-            { label: "Web3", value: "EVM · Solana · Cosmos" },
+            { label: "Web3", value: "EVM · Cosmos" },
             { label: "Teaching", value: "Stanford SL · ICodeGuru" },
           ].map((fact, i) => (
             <div key={i} className="flex justify-between text-xs">
