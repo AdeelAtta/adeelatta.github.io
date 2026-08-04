@@ -41,7 +41,7 @@ export const widgetDefinitions: WidgetDefinition[] = [
   { id: "stats", title: "Stats", icon: BarChart3, component: StatsWidget, defaultSize: { w: 3, h: 3 }, minSize: { w: 1, h: 1 } },
   { id: "teaching", title: "Volunteer Experience", icon: BookOpen, component: TeachingWidget, defaultSize: { w: 9, h: 5 }, minSize: { w: 4, h: 4 } },
   { id: "competitions", title: "Competitions & Hackathons", icon: Trophy, component: CompetitionsWidget, defaultSize: { w: 12, h: 19 }, minSize: { w: 6, h: 4 } },
-  { id: "projects", title: "Projects", icon: FolderKanban, component: ProjectsWidget, defaultSize: { w: 12, h: 8 }, minSize: { w: 6, h: 4 } },
+  { id: "projects", title: "Projects", icon: FolderKanban, component: ProjectsWidget, defaultSize: { w: 12, h: 12 }, minSize: { w: 6, h: 4 } },
   { id: "skills", title: "Technical Skills", icon: Wrench, component: SkillsWidget, defaultSize: { w: 12, h: 5 }, minSize: { w: 6, h: 5 } },
 ]
 
@@ -64,7 +64,7 @@ export function getDefaultLayout() {
     { i: "competitions", x: 0,  y: 7,  w: 12, h: 19, minW: 6, minH: 4 },
     { i: "stats",        x: 12, y: 7,  w: 3,  h: 3,  minW: 1, minH: 1 },
     { i: "experience",   x: 12, y: 10, w: 12, h: 8,  minW: 6, minH: 3 },
-    { i: "projects",     x: 12, y: 18, w: 12, h: 10, minW: 6, minH: 4 },
+    { i: "projects",     x: 12, y: 18, w: 12, h: 14, minW: 6, minH: 4 },
   ]
 }
 
@@ -78,7 +78,7 @@ function mdLayout() {
     { i: "experience",   x: 0,  y: 10, w: 6,  h: 5,  minW: 6, minH: 3 },
     { i: "teaching",     x: 6,  y: 11, w: 6,  h: 5,  minW: 4, minH: 4 },
     { i: "competitions", x: 0,  y: 15, w: 6,  h: 19, minW: 6, minH: 4 },
-    { i: "projects",     x: 6,  y: 16, w: 6,  h: 11, minW: 6, minH: 4 },
+    { i: "projects",     x: 6,  y: 16, w: 6,  h: 14, minW: 6, minH: 4 },
   ]
 }
 
@@ -92,7 +92,7 @@ function smLayout() {
     { i: "competitions", x: 0, y: 23, w: 6, h: 16, minW: 6, minH: 4 },
     { i: "stats",        x: 3, y: 39, w: 3, h: 3,  minW: 1, minH: 1 },
     { i: "experience",   x: 0, y: 42, w: 6, h: 5,  minW: 6, minH: 3 },
-    { i: "projects",     x: 0, y: 47, w: 6, h: 8,  minW: 6, minH: 4 },
+    { i: "projects",     x: 0, y: 47, w: 6, h: 11, minW: 6, minH: 4 },
   ]
 }
 
