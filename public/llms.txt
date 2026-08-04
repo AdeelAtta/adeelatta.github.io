@@ -9,10 +9,20 @@
 
 ### Site Sections
 - Introduction: Bio, Education (BSE in Software Engineering, University of Sindh), Awards & Honors, International Competitions & Hackathons
-- Teaching & Mentor: Stanford Code in Place (Section Leader), ICodeGuru (Moderator & Trainer)
-- Experience: Professional Experience (React.js Developer, AI Chatbot Developer), Technical Skills (AI/ML, Software Engineering, Blockchain/Web3), Projects (8 projects)
+- Teaching & Mentoring: Stanford Code in Place (Section Leader), ICodeGuru (Moderator & Trainer)
+- Experience: Professional Experience, Technical Skills (AI/ML, Software Engineering, Blockchain/Web3), Projects
+
+### Project Pages
+- IndexFlow – Brave Search Indexer: https://adeelatta.dev/indexflow
+- SchemaIntern – DB-Aware NL to SQL: https://adeelatta.dev/schema-intern-nl-to-sql
+- Pak-Angels Gen AI Hackathon (Urban AI Tool): https://adeelatta.dev/pak-angels-hackathon
+- Plant Disease Detection & Classification: https://adeelatta.dev/plant-disease-detection
+- Personify Chat Assistant: https://adeelatta.dev/personify-chat-assistant
+- Nexboard – Microsoft Agents League Hackathon: https://adeelatta.dev/nexboard
+- Geekle AI Hackathon (1st Place, Text-to-Diagram): https://adeelatta.dev/geekle-ai-hackathon
+- VR Shooting Gallery – Meta Quest 3: https://adeelatta.dev/gun-shooting
 
 ### Key Topics
 - Software Engineering, AI/ML, Blockchain, Full-Stack Development
 - Teaching, Mentoring, STEM Education
-- Hackathons: Meta Hacker Cup, Harvard CS50 Puzzle Day, Geekle AI Hackathon, LLM Hackathons
+- Hackathons: Meta Hacker Cup, Harvard CS50 Puzzle Day, Geekle AI Hackathon (1st Place), LLM Hackathons

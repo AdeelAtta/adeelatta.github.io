@@ -1,5 +1,8 @@
 import type { Metadata } from "next"
-import { ArrowRight, BarChart3, Cloud, Database, Globe, MapPin, TreePine, Users } from "lucide-react"
+import { ArrowRight, BarChart3, Cloud, Database, Globe, Linkedin, MapPin, TreePine, Users } from "lucide-react"
+
+const HACKATHON_URL =
+  "https://www.linkedin.com/posts/dr-rabia-chishti-217647148_hackathon-teamsuccess-urbanplanning-activity-7237405101319958528-fYTL/"
 
 export const metadata: Metadata = {
   title: "Pak-Angels Gen AI Hackathon – Urban AI Tool | NASA-Powered Environmental Analytics",
@@ -107,6 +110,16 @@ export default function PakAngelsPage() {
               >
                 <Globe className="size-4" />
                 View on GitHub
+              </a>
+              <a
+                href={HACKATHON_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-[8px] border px-6 py-3.5 text-[14px] font-medium leading-none transition-colors hover:opacity-80"
+                style={{ borderColor: "var(--clr-hairline)", color: "var(--clr-ink)" }}
+              >
+                <Linkedin className="size-4" />
+                Hackathon Post
               </a>
             </div>
           </div>
@@ -308,6 +321,10 @@ export default function PakAngelsPage() {
               <span style={{ color: "var(--clr-muted)" }}>/</span>
               <a href="https://github.com/AdeelAtta/urban_planner_tool" target="_blank" rel="noopener noreferrer" className="text-[13px] transition-colors hover:opacity-80" style={{ color: "var(--clr-muted)" }}>
                 GitHub
+              </a>
+              <span style={{ color: "var(--clr-muted)" }}>/</span>
+              <a href={HACKATHON_URL} target="_blank" rel="noopener noreferrer" className="text-[13px] transition-colors hover:opacity-80" style={{ color: "var(--clr-muted)" }}>
+                Hackathon Post
               </a>
               <span style={{ color: "var(--clr-muted)" }}>/</span>
               <a href="https://power.larc.nasa.gov/" target="_blank" rel="noopener noreferrer" className="text-[13px] transition-colors hover:opacity-80" style={{ color: "var(--clr-muted)" }}>
