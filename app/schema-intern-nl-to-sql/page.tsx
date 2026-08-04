@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { ArrowRight, CheckCircle, Database, Zap, Shield, BookOpen, GitBranch, BarChart3, Star } from "lucide-react"
+import { ArrowRight, CheckCircle, Database, Github, Zap, Shield, BookOpen, GitBranch, BarChart3, Star } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "SchemaIntern – DB-Aware NL to SQL | Natural Language to SQL Queries",
@@ -30,6 +30,7 @@ export const metadata: Metadata = {
 
 const DEMO_URL = "https://nl-2-analytics.vercel.app/auth/login"
 const API_URL = "https://schemaintern-backend.onrender.com/docs"
+const GITHUB_URL = "https://github.com/AdeelAtta/nl_2_analytics"
 
 const features = [
   { icon: Database, title: "Connect Any Database", desc: "PostgreSQL, MySQL, Snowflake, BigQuery — SchemaIntern discovers your schema automatically. No manual YAML or config files." },
@@ -152,6 +153,10 @@ export default function SchemaInternPage() {
                 <a href={DEMO_URL} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2 px-6 py-3 text-[14px] font-medium leading-[1.3] transition-colors">
                   Try Live Demo
                   <ArrowRight className="size-4" />
+                </a>
+                <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex items-center gap-2 px-6 py-3 text-[14px] font-medium leading-[1.3] transition-colors">
+                  <Github className="size-4" />
+                  View on GitHub
                 </a>
                 <a href="#how-it-works" className="btn-secondary inline-flex items-center gap-2 px-6 py-3 text-[14px] font-medium leading-[1.3] transition-colors">
                   How It Works
@@ -353,6 +358,10 @@ export default function SchemaInternPage() {
             <div className="flex gap-5">
               <a href={DEMO_URL} target="_blank" rel="noopener noreferrer" className="text-[14px] transition-colors hover:opacity-80" style={{ color: "var(--clr-on-dark-muted)" }}>
                 Live Demo
+              </a>
+              <span style={{ color: "var(--clr-on-dark-muted)" }}>/</span>
+              <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="text-[14px] transition-colors hover:opacity-80" style={{ color: "var(--clr-on-dark-muted)" }}>
+                GitHub
               </a>
               <span style={{ color: "var(--clr-on-dark-muted)" }}>/</span>
               <a href={API_URL} target="_blank" rel="noopener noreferrer" className="text-[14px] transition-colors hover:opacity-80" style={{ color: "var(--clr-on-dark-muted)" }}>

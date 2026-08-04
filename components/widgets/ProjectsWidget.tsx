@@ -9,7 +9,9 @@ const projects = [
   { title: "Pak-Angels Gen AI Hackathon – Urban AI Tool", desc: "AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER meteorological data and GPT-4. Built for Pak-Angels Gen AI Hackathon.", link: "https://adeelatta.dev/pak-angels-hackathon" },
   { title: "Plant Disease Detection & Classification", desc: "Deep learning computer vision architectures using PyTorch for automated plant disease identification.", link: "https://adeelatta.dev/plant-disease-detection" },
   { title: "IndexFlow – Brave Search Indexer", desc: "Chrome extension that automates bulk URL submission to Brave Search. Supports XML sitemaps, sitemap URLs, and manual paste input.", link: "https://adeelatta.dev/indexflow" },
-  { title: "SchemaIntern – DB-Aware NL to SQL", desc: "Schema-aware natural language to SQL. Connect your database and ask questions in plain English. Generates accurate, safe SQL.", link: "https://adeelatta.dev/schema-intern-nl-to-sql" },
+  { title: "SchemaIntern – DB-Aware NL to SQL", desc: "Schema-aware natural language to SQL built for the AMD Developer Hackathon. Connect your database and ask questions in plain English. Generates accurate, safe SQL.", link: "https://adeelatta.dev/schema-intern-nl-to-sql" },
+  { title: "Nexboard – Microsoft Agents League Hackathon", desc: "AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive agent simulations and marketing/email simulations for sales teams.", link: "https://adeelatta.dev/nexboard" },
+  { title: "VR Shooting Gallery – Meta Quest 3", desc: "Carnival-style VR shooting range built for Meta Quest 3. Shoot moving targets, build combos, and unlock guns and skins across five themed ranges.", link: "https://adeelatta.dev/gun-shooting" },
 ]
 
 export function ProjectsWidget() {

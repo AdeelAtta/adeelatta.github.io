@@ -29,6 +29,7 @@ export const metadata: Metadata = {
 }
 
 const GITHUB_URL = "https://github.com/SameerVers3/Chat-Evaluator-llama3-hackathon"
+const LIVE_URL = "https://chromewebstore.google.com/detail/personify-ai-chat-assista/dfokiabcgalihnedbbjbkdfhjeokdpne"
 
 export default function PersonifyPage() {
   return (
@@ -78,10 +79,14 @@ export default function PersonifyPage() {
               Built with Llama 3 to help you craft better responses in seconds.
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2 px-6 py-3.5 text-[14px] leading-none transition-all">
+              <a href={LIVE_URL} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2 px-6 py-3.5 text-[14px] leading-none transition-all">
+                <Globe className="size-4" />
+                Install Extension
+                <ArrowRight className="size-4" />
+              </a>
+              <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex items-center gap-2 px-6 py-3.5 text-[14px] leading-none transition-all">
                 <Github className="size-4" />
                 View on GitHub
-                <ArrowRight className="size-4" />
               </a>
             </div>
           </div>
@@ -270,6 +275,10 @@ export default function PersonifyPage() {
               </a>
             </p>
             <div className="flex gap-5">
+              <a href={LIVE_URL} target="_blank" rel="noopener noreferrer" className="text-[13px] transition-colors hover:opacity-80" style={{ color: "var(--clr-muted)" }}>
+                Chrome Web Store
+              </a>
+              <span style={{ color: "var(--clr-muted)" }}>/</span>
               <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[13px] transition-colors hover:opacity-80" style={{ color: "var(--clr-muted)" }}>
                 <Github className="size-3.5" />
                 Source Code

@@ -10,7 +10,7 @@ const competitions: {
 }[] = [
   {
     title: "SchemaIntern – DB-Aware NL to SQL (AMD Hackathon)",
-    desc: "Built an NL-to-SQL module with an interactive frontend enabling natural language querying across schemas, automatic SQL generation, and cross-schema data integration.",
+    desc: "Built an NL-to-SQL module with an interactive frontend enabling natural language querying across schemas, automatic SQL generation, and cross-schema data integration. Result of the AMD Developer Hackathon Act II.",
     link: "https://adeelatta.dev/schema-intern-nl-to-sql",
     team: {
       name: "Team",
@@ -23,7 +23,7 @@ const competitions: {
   {
     title: "Microsoft Agents League Hackathon (Nexboard)",
     desc: "Developed an AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive simulation and marketing/email simulations for sales teams.",
-    link: "https://github.com/SoomroBilal/Nexboard",
+    link: "https://adeelatta.dev/nexboard",
     team: {
       name: "Nexboard",
       members: [

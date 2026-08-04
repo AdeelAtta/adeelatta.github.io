@@ -40,7 +40,7 @@ export const widgetDefinitions: WidgetDefinition[] = [
   { id: "experience", title: "Professional Experience", icon: Briefcase, component: ExperienceWidget, defaultSize: { w: 12, h: 5 }, minSize: { w: 6, h: 3 } },
   { id: "stats", title: "Stats", icon: BarChart3, component: StatsWidget, defaultSize: { w: 3, h: 3 }, minSize: { w: 1, h: 1 } },
   { id: "teaching", title: "Volunteer Experience", icon: BookOpen, component: TeachingWidget, defaultSize: { w: 9, h: 5 }, minSize: { w: 4, h: 4 } },
-  { id: "competitions", title: "Competitions & Hackathons", icon: Trophy, component: CompetitionsWidget, defaultSize: { w: 12, h: 16 }, minSize: { w: 6, h: 4 } },
+  { id: "competitions", title: "Competitions & Hackathons", icon: Trophy, component: CompetitionsWidget, defaultSize: { w: 12, h: 19 }, minSize: { w: 6, h: 4 } },
   { id: "projects", title: "Projects", icon: FolderKanban, component: ProjectsWidget, defaultSize: { w: 12, h: 8 }, minSize: { w: 6, h: 4 } },
   { id: "skills", title: "Technical Skills", icon: Wrench, component: SkillsWidget, defaultSize: { w: 12, h: 5 }, minSize: { w: 6, h: 5 } },
 ]
