@@ -8,7 +8,7 @@ import { WidgetDrawer } from "@/components/widgets/WidgetDrawer"
 import { widgetMap, getDefaultLayouts, breakpoints, cols, allWidgetIds, type WidgetId } from "@/components/widgets/registry"
 import { LayoutGrid, RotateCcw, Pencil, Lock, Sun, Moon } from "lucide-react"
 
-const STORAGE_KEY = "adeel-dashboard-data"
+const STORAGE_KEY = "adeel-dashboard-data-v2"
 
 function loadFromStorage() {
   try {
