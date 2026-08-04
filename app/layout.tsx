@@ -17,7 +17,7 @@ const sourceSerif = Source_Serif_4({
 })
 
 export const metadata: Metadata = {
-  title: "Adeel Atta — Software Engineer (Full-Stack & AI) | Building AI Systems",
+  title: "Adeel Atta | Software Engineer (Full-Stack & AI) | Building AI Systems",
   description:
     "Software engineer (Full-Stack & AI) and hackathon competitor. portfolio showcasing projects, teaching, awards, and professional experience.",
   metadataBase: new URL("https://adeelatta.dev"),
@@ -76,12 +76,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://adeelatta.dev" },
   twitter: {
     card: "summary_large_image",
-    title: "Adeel Atta — Software Engineer | University of Sindh",
+    title: "Adeel Atta | Software Engineer | University of Sindh",
     description: "Software engineer, educator, and hackathon competitor. Academic portfolio showcasing projects, teaching, awards, and professional experience.",
     images: ["https://adeelatta.dev/images/design-mode/profile.webp"],
   },
   openGraph: {
-    title: "Adeel Atta — Academic Portfolio",
+    title: "Adeel Atta | Academic Portfolio",
     description: "Software engineer, educator, and hackathon competitor. Building intelligent systems with AI and modern engineering.",
     url: "https://adeelatta.dev",
     siteName: "Adeel Atta",
