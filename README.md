@@ -45,7 +45,7 @@ University of Sindh, Jamshoro - Jan 2020 – May 2024
 - **Visionary Award - LLM Hackathon (Materials Science & Chemistry)** - Visionary Award Recipient. Built Forja de Matéria AI, an LLM/RAG platform for highly structured automated data extraction. Team: Best Team
 - **Meta Hacker Cup 2024** - Ranked 6,752 out of 30,000+ global participants and 56th in Pakistan
 - **Harvard CS50 Puzzle Day** - Global puzzle-solving competition demonstrating problem-solving and logical reasoning skills. Team: CS50 Puzzle Squad
-- **Llama 3 Hackathon** - Built an LLM-as-a-judge chat evaluation tool using the Llama 3 model. Team: Fastian
+- **Personify Chat Assistant (Llama 3 Hackathon)** - Built an LLM-as-a-judge chat evaluation tool using the Llama 3 model, shipped as an AI-powered messaging assistant for WhatsApp Web and LinkedIn. Team: Fastian
 - **Pak-Angels Gen AI Hackathon** - Developed AI-powered Environmental & Urban Metrics Tool leveraging NASA POWER data and GPT-4. Team: Smart Solution
 - **WordPress Plugin Hackathon** - Contributed to programmatic plugin feature development
 - **Microsoft Agents League Hackathon (Nexboard)** - Developed an AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive simulation and marketing/email simulations for sales teams. Team: Nexboard
