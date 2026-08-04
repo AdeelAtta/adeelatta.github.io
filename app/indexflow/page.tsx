@@ -536,7 +536,7 @@ export default function IndexFlowPage() {
               <img src="/indexflow/icon128.png" alt="" className="mr-2 inline-block size-5 align-middle" />
               &copy; {new Date().getFullYear()} IndexFlow by{" "}
               <a
-                href="https://adeelatta.dev"
+                href="/"
                 className="transition-opacity hover:opacity-80"
                 style={{ color: "var(--clr-on-dark)" }}
               >

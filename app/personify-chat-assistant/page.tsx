@@ -270,7 +270,7 @@ export default function PersonifyPage() {
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-[13px]" style={{ color: "var(--clr-muted)" }}>
               Built with <span style={{ color: "var(--clr-primary)" }}>Llama 3</span> by{" "}
-              <a href="https://adeelatta.dev" className="transition-opacity hover:opacity-80" style={{ color: "var(--clr-ink)" }}>
+              <a href="/" className="transition-opacity hover:opacity-80" style={{ color: "var(--clr-ink)" }}>
                 Adeel Atta
               </a>
             </p>

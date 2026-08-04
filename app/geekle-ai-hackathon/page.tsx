@@ -310,7 +310,7 @@ export default function GeekleAiHackathonPage() {
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-[13px]" style={{ color: "var(--clr-muted)" }}>
               Text-to-Diagram by{" "}
-              <a href="https://adeelatta.dev" className="transition-opacity hover:opacity-80" style={{ color: "var(--clr-ink)" }}>
+              <a href="/" className="transition-opacity hover:opacity-80" style={{ color: "var(--clr-ink)" }}>
                 Adeel Atta
               </a>{" "}
               · Team FR1

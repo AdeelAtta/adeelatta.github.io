@@ -11,7 +11,7 @@ const competitions: {
   {
     title: "SchemaIntern – DB-Aware NL to SQL (AMD Hackathon)",
     desc: "Built an NL-to-SQL module with an interactive frontend enabling natural language querying across schemas, automatic SQL generation, and cross-schema data integration. Result of the AMD Developer Hackathon Act II.",
-    link: "https://adeelatta.dev/schema-intern-nl-to-sql",
+    link: "/schema-intern-nl-to-sql",
     team: {
       name: "Team",
       members: [
@@ -23,7 +23,7 @@ const competitions: {
   {
     title: "Microsoft Agents League Hackathon (Nexboard)",
     desc: "Developed an AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive simulation and marketing/email simulations for sales teams.",
-    link: "https://adeelatta.dev/nexboard",
+    link: "/nexboard",
     team: {
       name: "Nexboard",
       members: [
@@ -35,7 +35,7 @@ const competitions: {
   {
     title: "1st Place — Geekle AI Hackathon",
     desc: "1st Place — Developed a Text-to-Diagram module for generating structured architecture diagrams using AI. Won $2,000 prize.",
-    link: "https://adeelatta.dev/geekle-ai-hackathon",
+    link: "/geekle-ai-hackathon",
     team: {
       name: "FR1",
       members: [
@@ -93,7 +93,7 @@ const competitions: {
   {
     title: "Personify Chat Assistant — Llama 3 Hackathon (lablab.ai)",
     desc: "Built an LLM-as-a-judge chat evaluation tool using the Llama 3 model, shipped as an AI-powered chat assistant for WhatsApp Web and LinkedIn.",
-    link: "https://adeelatta.dev/personify-chat-assistant",
+    link: "/personify-chat-assistant",
     team: {
       name: "Fastian",
       members: [

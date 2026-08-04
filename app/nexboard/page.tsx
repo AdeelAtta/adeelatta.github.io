@@ -317,7 +317,7 @@ export default function NexboardPage() {
               Built for the{" "}
               <span className="font-semibold" style={{ color: "var(--clr-ink)" }}>Microsoft Agents League Hackathon</span>
               {" "}by{" "}
-              <a href="https://adeelatta.dev" className="transition-opacity hover:opacity-80" style={{ color: "var(--clr-accent)" }}>
+              <a href="/" className="transition-opacity hover:opacity-80" style={{ color: "var(--clr-accent)" }}>
                 Adeel Atta
               </a>{" "}
               &{" "}

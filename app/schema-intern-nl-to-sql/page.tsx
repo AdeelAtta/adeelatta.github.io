@@ -351,7 +351,7 @@ export default function SchemaInternPage() {
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-[14px]" style={{ color: "var(--clr-on-dark-muted)" }}>
               &copy; {new Date().getFullYear()} SchemaIntern by{" "}
-              <a href="https://adeelatta.dev" className="transition-opacity hover:opacity-80" style={{ color: "var(--clr-on-dark)" }}>
+              <a href="/" className="transition-opacity hover:opacity-80" style={{ color: "var(--clr-on-dark)" }}>
                 Adeel Atta
               </a>
             </p>
