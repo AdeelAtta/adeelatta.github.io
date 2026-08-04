@@ -11,6 +11,7 @@ const projects = [
   { title: "IndexFlow – Brave Search Indexer", desc: "Chrome extension that automates bulk URL submission to Brave Search. Supports XML sitemaps, sitemap URLs, and manual paste input.", link: "https://adeelatta.dev/indexflow" },
   { title: "SchemaIntern – DB-Aware NL to SQL", desc: "Schema-aware natural language to SQL built for the AMD Developer Hackathon. Connect your database and ask questions in plain English. Generates accurate, safe SQL.", link: "https://adeelatta.dev/schema-intern-nl-to-sql" },
   { title: "Nexboard – Microsoft Agents League Hackathon", desc: "AI-powered intelligent multi-tenant SaaS platform transforming employee onboarding with interactive agent simulations and marketing/email simulations for sales teams.", link: "https://adeelatta.dev/nexboard" },
+  { title: "Text-to-Diagram – Geekle AI Hackathon (1st Place)", desc: "AI module that generates structured architecture diagrams from natural language. Won 1st place and a $2,000 prize at the Geekle AI Hackathon.", link: "https://adeelatta.dev/geekle-ai-hackathon" },
   { title: "VR Shooting Gallery – Meta Quest 3", desc: "Carnival-style VR shooting range built for Meta Quest 3. Shoot moving targets, build combos, and unlock guns and skins across five themed ranges.", link: "https://adeelatta.dev/gun-shooting" },
 ]
 

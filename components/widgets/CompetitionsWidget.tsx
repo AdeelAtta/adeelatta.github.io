@@ -35,7 +35,7 @@ const competitions: {
   {
     title: "1st Place — Geekle AI Hackathon",
     desc: "1st Place — Developed a Text-to-Diagram module for generating structured architecture diagrams using AI. Won $2,000 prize.",
-    link: "https://www.linkedin.com/posts/geekle-us_geeklehackathon-aihackathon-geekle-activity-7220063052048609281-K0pZ/",
+    link: "https://adeelatta.dev/geekle-ai-hackathon",
     team: {
       name: "FR1",
       members: [
@@ -91,9 +91,9 @@ const competitions: {
     },
   },
   {
-    title: "Llama 3 Hackathon",
-    desc: "Built an LLM-as-a-judge chat evaluation tool using the Llama 3 model.",
-    link: "https://lablab.ai/u/@AdeelAtta/cm0fh22ag007me7ihgfyrouj7",
+    title: "Personify Chat Assistant — Llama 3 Hackathon (lablab.ai)",
+    desc: "Built an LLM-as-a-judge chat evaluation tool using the Llama 3 model, shipped as an AI-powered chat assistant for WhatsApp Web and LinkedIn.",
+    link: "https://adeelatta.dev/personify-chat-assistant",
     team: {
       name: "Fastian",
       members: [

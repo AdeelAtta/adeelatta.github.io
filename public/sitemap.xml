@@ -49,6 +49,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://adeelatta.dev/geekle-ai-hackathon</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://adeelatta.dev/indexflow/privacy-policy</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>yearly</changefreq>
