@@ -67,8 +67,9 @@ export function getDefaultLayout() {
     { i: "competitions", x: 0,  y: 7,  w: 12, h: 19, minW: 6, minH: 4 },
     { i: "stats",        x: 12, y: 7,  w: 3,  h: 3,  minW: 1, minH: 1 },
     { i: "experience",   x: 12, y: 10, w: 12, h: 8,  minW: 6, minH: 3 },
-    { i: "projects",     x: 12, y: 26, w: 12, h: 12, minW: 6, minH: 4 },
-    { i: "faq",          x: 0,  y: 26, w: 12, h: 5,  minW: 6, minH: 3 },
+    { i: "projects",     x: 12, y: 18, w: 12, h: 12, minW: 6, minH: 4 },
+    { i: "faq",          x: 0,  y: 26, w: 12, h: 4,  minW: 6, minH: 3 },
+    { i: "skills",       x: 0,  y: 30, w: 24, h: 5,  minW: 6, minH: 5 },
   ]
 }
 
@@ -100,6 +101,7 @@ function smLayout() {
     { i: "experience",   x: 0, y: 48, w: 6, h: 11, minW: 6, minH: 3 },
     { i: "projects",     x: 0, y: 59, w: 6, h: 16, minW: 6, minH: 4 },
     { i: "faq",          x: 0, y: 75, w: 6, h: 5,  minW: 6, minH: 3 },
+    { i: "skills",       x: 0, y: 80, w: 6, h: 5,  minW: 6, minH: 5 },
   ]
 }
 
