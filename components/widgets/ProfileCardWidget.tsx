@@ -13,7 +13,7 @@ export function ProfileCardWidget() {
         <h2 className="text-lg font-bold text-text-primary font-sans tracking-tight">Adeel Atta</h2>
         <p className="text-xs text-accent font-medium font-sans mt-0.5">Frontend Engineer · Architecture → Deployment</p>
       </div>
-      <div className="flex min-[680px]:flex-col justify-between">
+      <div className="flex flex-col justify-between gap-4">
         <div className="space-y-2.5 text-xs">
           <a href="mailto:adeelatta2000@gmail.com" className="flex items-center gap-2.5 text-text-secondary hover:text-text-primary transition-colors duration-200 group">
             <Mail className="w-3.5 h-3.5 text-accent shrink-0 group-hover:text-accent-hover" /> adeelatta2000@gmail.com
