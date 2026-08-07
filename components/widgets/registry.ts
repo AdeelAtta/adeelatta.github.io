@@ -89,16 +89,16 @@ function mdLayout() {
 
 function smLayout() {
   return [
-    { i: "profile-card", x: 0, y: 0,  w: 4, h: 8,  minW: 4, minH: 6 },
-    { i: "bio",          x: 0, y: 8,  w: 6, h: 2,  minW: 8, minH: 2 },
-    { i: "teaching",     x: 0, y: 10, w: 6, h: 5,  minW: 4, minH: 4 },
-    { i: "education",    x: 0, y: 15, w: 6, h: 4,  minW: 4, minH: 3 },
-    { i: "awards",       x: 0, y: 19, w: 6, h: 4,  minW: 4, minH: 3 },
-    { i: "competitions", x: 0, y: 23, w: 6, h: 16, minW: 6, minH: 4 },
-    { i: "stats",        x: 3, y: 39, w: 3, h: 3,  minW: 1, minH: 1 },
-    { i: "experience",   x: 0, y: 42, w: 6, h: 5,  minW: 6, minH: 3 },
-    { i: "projects",     x: 0, y: 47, w: 6, h: 12, minW: 6, minH: 4 },
-    { i: "faq",          x: 0, y: 59, w: 6, h: 5,  minW: 6, minH: 3 },
+    { i: "profile-card", x: 0, y: 0,  w: 6, h: 8,  minW: 4, minH: 6 },
+    { i: "bio",          x: 0, y: 8,  w: 6, h: 3,  minW: 4, minH: 2 },
+    { i: "teaching",     x: 0, y: 11, w: 6, h: 5,  minW: 4, minH: 4 },
+    { i: "education",    x: 0, y: 16, w: 6, h: 4,  minW: 4, minH: 3 },
+    { i: "awards",       x: 0, y: 20, w: 6, h: 4,  minW: 4, minH: 3 },
+    { i: "competitions", x: 0, y: 24, w: 6, h: 22, minW: 6, minH: 4 },
+    { i: "stats",        x: 0, y: 46, w: 6, h: 2,  minW: 1, minH: 1 },
+    { i: "experience",   x: 0, y: 48, w: 6, h: 11, minW: 6, minH: 3 },
+    { i: "projects",     x: 0, y: 59, w: 6, h: 16, minW: 6, minH: 4 },
+    { i: "faq",          x: 0, y: 75, w: 6, h: 5,  minW: 6, minH: 3 },
   ]
 }
 
