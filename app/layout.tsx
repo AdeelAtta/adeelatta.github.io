@@ -151,7 +151,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${onest.variable} ${sourceSerif.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{
-          __html: `(function(){try{var t=localStorage.getItem("adeel-theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme:dark)").matches))document.documentElement.classList.add("dark")}catch(e){}})()`
+          __html: `(function(){try{var t=localStorage.getItem("adeel-theme");if(t!=="light")document.documentElement.classList.add("dark")}catch(e){}})()`
         }} />
         {jsonLd.map((ld, i) => (
           <script
