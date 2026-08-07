@@ -9,7 +9,7 @@ import { widgetMap, getDefaultLayouts, breakpoints, cols, allWidgetIds, type Wid
 import { faqItems } from "@/components/widgets/FAQWidget"
 import { LayoutGrid, RotateCcw, Pencil, Lock, Sun, Moon } from "lucide-react"
 
-const STORAGE_KEY = "adeel-dashboard-data-v0.3"
+const STORAGE_KEY = "adeel-dashboard-data-v0.4"
 
 function loadFromStorage() {
   try {
