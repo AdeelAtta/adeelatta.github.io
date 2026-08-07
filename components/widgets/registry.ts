@@ -74,16 +74,17 @@ export function getDefaultLayout() {
 
 function mdLayout() {
   return [
-    { i: "profile-card", x: 0,  y: 0,  w: 5,  h: 7,  minW: 4, minH: 6 },
-    { i: "education",    x: 5,  y: 0,  w: 7,  h: 4,  minW: 4, minH: 3 },
-    { i: "awards",       x: 5,  y: 4,  w: 7,  h: 4,  minW: 4, minH: 3 },
-    { i: "bio",          x: 0,  y: 8,  w: 8,  h: 2,  minW: 8, minH: 2 },
-    { i: "stats",        x: 8,  y: 8,  w: 3,  h: 3,  minW: 1, minH: 1 },
-    { i: "experience",   x: 0,  y: 10, w: 6,  h: 5,  minW: 6, minH: 3 },
-    { i: "teaching",     x: 6,  y: 11, w: 6,  h: 5,  minW: 4, minH: 4 },
-    { i: "competitions", x: 0,  y: 15, w: 6,  h: 19, minW: 6, minH: 4 },
-    { i: "projects",     x: 6,  y: 34, w: 6,  h: 12, minW: 6, minH: 4 },
-    { i: "faq",          x: 0,  y: 46, w: 12, h: 5,  minW: 6, minH: 3 },
+    { i: "profile-card", x: 0, y: 0,  w: 5, h: 7,  minW: 4, minH: 6 },
+    { i: "education",    x: 5, y: 0,  w: 7, h: 4,  minW: 4, minH: 3 },
+    { i: "awards",       x: 5, y: 4,  w: 7, h: 4,  minW: 4, minH: 3 },
+    { i: "stats",        x: 0, y: 7,  w: 3, h: 3,  minW: 1, minH: 1 },
+    { i: "bio",          x: 3, y: 8,  w: 9, h: 2,  minW: 8, minH: 2 },
+    { i: "experience",   x: 0, y: 10, w: 6, h: 11, minW: 6, minH: 3 },
+    { i: "teaching",     x: 6, y: 10, w: 6, h: 5,  minW: 4, minH: 4 },
+    { i: "projects",     x: 6, y: 15, w: 6, h: 15, minW: 6, minH: 4 },
+    { i: "competitions", x: 0, y: 21, w: 6, h: 26, minW: 6, minH: 4 },
+    { i: "faq",          x: 6, y: 30, w: 6, h: 4,  minW: 6, minH: 3 },
+    { i: "skills",       x: 6, y: 34, w: 6, h: 6,  minW: 6, minH: 5 },
   ]
 }
 

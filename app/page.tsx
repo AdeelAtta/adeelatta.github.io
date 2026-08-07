@@ -28,7 +28,7 @@ export default function Home() {
     return loadFromStorage()?.layouts ?? getDefaultLayouts()
   })
   const [enabledWidgets, setEnabledWidgets] = useState<WidgetId[]>(() => {
-    return loadFromStorage()?.enabledWidgets ?? allWidgetIds.filter((id) => id !== "skills")
+    return loadFromStorage()?.enabledWidgets ?? allWidgetIds
   })
   const [isEditing, setIsEditing] = useState(true)
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -105,7 +105,7 @@ export default function Home() {
   function handleReset() {
     const defaults = getDefaultLayouts()
     setAllLayouts(defaults)
-    const defaultWidgets = allWidgetIds.filter((id) => id !== "skills")
+    const defaultWidgets = allWidgetIds
     setEnabledWidgets(defaultWidgets)
     saveToStorage({ layouts: defaults, enabledWidgets: defaultWidgets })
   }
